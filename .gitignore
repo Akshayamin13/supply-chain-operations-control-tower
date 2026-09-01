@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editors
+.vscode/
+.idea/
+
+# Disposable generated files
+data/tmp/*
+!data/tmp/.gitkeep
+
+# Logs and database dumps
+*.log
+*.dump
+*.backup
