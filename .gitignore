@@ -19,6 +19,9 @@ venv/
 # Disposable generated files
 data/tmp/*
 !data/tmp/.gitkeep
+node_modules
+node_modules/
+*.inspect.ndjson
 
 # Logs and database dumps
 *.log

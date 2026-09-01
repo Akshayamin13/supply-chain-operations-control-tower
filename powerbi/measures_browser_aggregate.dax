@@ -1,0 +1,139 @@
+// Measures for control_tower_powerbi_browser_source.xlsx only.
+
+Total Orders =
+SUM(OrderSummary[order_count])
+
+Non-Cancelled Orders =
+CALCULATE(
+    [Total Orders],
+    OrderSummary[order_status] <> "Cancelled"
+)
+
+Revenue =
+CALCULATE(
+    SUM(OrderSummary[order_value_eur]),
+    OrderSummary[order_status] <> "Cancelled"
+)
+
+Average Order Value =
+DIVIDE([Revenue], [Non-Cancelled Orders])
+
+Total Shipments =
+SUM(ShipmentSummary[shipment_count])
+
+Delivered Shipments =
+SUM(ShipmentSummary[delivered_shipment_count])
+
+On-Time Deliveries =
+SUM(ShipmentSummary[on_time_delivery_count])
+
+Late Deliveries =
+SUM(ShipmentSummary[late_delivery_count])
+
+On-Time Delivery % =
+DIVIDE([On-Time Deliveries], [Delivered Shipments])
+
+Late Delivery % =
+DIVIDE([Late Deliveries], [Delivered Shipments])
+
+Average Delay Days =
+DIVIDE(
+    SUM(ShipmentSummary[delivery_delay_days_sum]),
+    SUM(ShipmentSummary[delivery_delay_observation_count])
+)
+
+Average Fulfilment Lead Time =
+DIVIDE(
+    SUM(ShipmentSummary[fulfilment_lead_time_days_sum]),
+    SUM(ShipmentSummary[fulfilment_lead_time_observation_count])
+)
+
+Open Backlog =
+CALCULATE(
+    [Total Orders],
+    OrderSummary[is_backlog] = TRUE()
+)
+
+Backlog > 3 Days =
+CALCULATE(
+    [Total Orders],
+    OrderSummary[is_backlog] = TRUE(),
+    OrderSummary[backlog_bucket] IN {"4–7 days", "8–14 days", "15+ days"}
+)
+
+Backlog > 7 Days =
+CALCULATE(
+    [Total Orders],
+    OrderSummary[is_backlog] = TRUE(),
+    OrderSummary[backlog_bucket] IN {"8–14 days", "15+ days"}
+)
+
+Backlog Value =
+CALCULATE(
+    SUM(OrderSummary[order_value_eur]),
+    OrderSummary[is_backlog] = TRUE()
+)
+
+SLA Breach Orders =
+SUM(OrderSummary[sla_breach_order_count])
+
+SLA Eligible Orders =
+SUM(OrderSummary[sla_eligible_order_count])
+
+SLA Breach % =
+DIVIDE([SLA Breach Orders], [SLA Eligible Orders])
+
+Warehouse Throughput Units =
+SUM(InventorySummary[shipped_quantity])
+
+Valid Inventory Snapshots =
+SUM(InventorySummary[valid_snapshot_count])
+
+Stockout Snapshots =
+SUM(InventorySummary[stockout_snapshot_count])
+
+Stockout Rate =
+DIVIDE([Stockout Snapshots], [Valid Inventory Snapshots])
+
+Shipped Cost of Goods =
+SUM(InventorySummary[shipped_cogs_eur])
+
+Inventory Days Represented =
+SUMX(
+    VALUES(InventorySummary[inventory_month_key]),
+    CALCULATE(MAX(InventorySummary[days_in_month]))
+)
+
+Average Inventory Value =
+DIVIDE(
+    SUM(InventorySummary[closing_inventory_value_day_sum_eur]),
+    [Inventory Days Represented]
+)
+
+Inventory Turnover =
+DIVIDE([Shipped Cost of Goods], [Average Inventory Value])
+
+Shipments With Exception =
+CALCULATE(
+    [Total Shipments],
+    ShipmentSummary[exception_reason] <> "No Exception"
+)
+
+Exception Rate =
+DIVIDE([Shipments With Exception], [Total Shipments])
+
+Shipping Cost =
+SUM(ShipmentSummary[shipping_cost_eur])
+
+Average Shipping Cost =
+DIVIDE([Shipping Cost], [Total Shipments])
+
+// Use this only in a visual filtered to one warehouse.
+Average Monthly Capacity Utilisation % =
+AVERAGEX(
+    VALUES(OrderSummary[order_month_key]),
+    DIVIDE(
+        [Non-Cancelled Orders],
+        MAX(DimWarehouse[daily_order_capacity]) * MAX(DimDate[day_of_month])
+    )
+)

@@ -50,6 +50,6 @@ Only after Phase 7, prepare the Mac-compatible Power BI workflow, semantic-model
 
 ## Phase 9 — Findings and portfolio hand-off
 
-Document evidence-based observations, likely causes, implications, and recommendations. Finish screenshots, README, CV bullets, and interview questions without inventing real-world impact.
+Document evidence-based observations, likely causes, implications, and recommendations. Finish the Power BI handoff, README, CV bullets, and interview questions without inventing real-world impact.
 
-**Completion gate:** The repository can be reproduced and every public claim is defensible.
+**Completion gate:** The local repository can be reproduced, every public claim is defensible, and the remaining tenant-side Power BI assembly is documented explicitly.

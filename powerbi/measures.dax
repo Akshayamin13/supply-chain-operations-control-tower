@@ -1,0 +1,187 @@
+// Core volume and value
+Total Orders =
+CALCULATE(
+    DISTINCTCOUNT(FactOrders[order_id]),
+    FactOrders[is_analysis_eligible] = TRUE()
+)
+
+Non-Cancelled Orders =
+CALCULATE(
+    [Total Orders],
+    FactOrders[order_status] <> "Cancelled"
+)
+
+Revenue =
+CALCULATE(
+    SUM(FactOrders[order_value_eur]),
+    FactOrders[is_analysis_eligible] = TRUE(),
+    FactOrders[order_status] <> "Cancelled"
+)
+
+Average Order Value =
+DIVIDE([Revenue], [Non-Cancelled Orders])
+
+Total Shipments =
+CALCULATE(
+    DISTINCTCOUNT(FactShipments[shipment_id]),
+    FactShipments[is_analysis_eligible] = TRUE()
+)
+
+Delivered Shipments =
+CALCULATE(
+    [Total Shipments],
+    FactShipments[actual_delivery_date_key] <> 0
+)
+
+// Delivery and SLA
+On-Time Deliveries =
+CALCULATE(
+    [Total Shipments],
+    FactShipments[actual_delivery_date_key] <> 0,
+    FactShipments[is_on_time] = TRUE()
+)
+
+Late Deliveries =
+CALCULATE(
+    [Total Shipments],
+    FactShipments[actual_delivery_date_key] <> 0,
+    FactShipments[is_on_time] = FALSE()
+)
+
+On-Time Delivery % =
+DIVIDE([On-Time Deliveries], [Delivered Shipments])
+
+Late Delivery % =
+DIVIDE([Late Deliveries], [Delivered Shipments])
+
+Average Delay Days =
+AVERAGEX(
+    FILTER(
+        FactShipments,
+        FactShipments[is_analysis_eligible] = TRUE()
+            && FactShipments[actual_delivery_date_key] <> 0
+            && NOT ISBLANK(FactShipments[delivery_delay_days])
+    ),
+    MAX(0, FactShipments[delivery_delay_days])
+)
+
+Average Fulfilment Lead Time =
+CALCULATE(
+    AVERAGE(FactShipments[fulfilment_lead_time_days]),
+    FactShipments[is_analysis_eligible] = TRUE()
+)
+
+SLA Breach Orders =
+CALCULATE(
+    [Total Orders],
+    FactOrders[is_sla_breach] = TRUE(),
+    FactOrders[fulfilment_is_analysis_eligible] = TRUE()
+)
+
+SLA Eligible Orders =
+CALCULATE(
+    [Total Orders],
+    FactOrders[order_status] <> "Cancelled",
+    FactOrders[promised_delivery_date_key] <> 0,
+    FactOrders[fulfilment_is_analysis_eligible] = TRUE()
+)
+
+SLA Breach % =
+DIVIDE([SLA Breach Orders], [SLA Eligible Orders])
+
+// Backlog
+Open Backlog =
+CALCULATE(
+    [Total Orders],
+    FactOrders[is_backlog] = TRUE()
+)
+
+Backlog > 3 Days =
+CALCULATE(
+    [Total Orders],
+    FactOrders[is_backlog] = TRUE(),
+    FactOrders[backlog_age_days] > 3
+)
+
+Backlog > 7 Days =
+CALCULATE(
+    [Total Orders],
+    FactOrders[is_backlog] = TRUE(),
+    FactOrders[backlog_age_days] > 7
+)
+
+Backlog Value =
+CALCULATE(
+    SUM(FactOrders[order_value_eur]),
+    FactOrders[is_analysis_eligible] = TRUE(),
+    FactOrders[is_backlog] = TRUE()
+)
+
+// Inventory
+Warehouse Throughput Units =
+CALCULATE(
+    SUM(FactInventory[shipped_quantity]),
+    FactInventory[is_analysis_eligible] = TRUE()
+)
+
+Valid Inventory Snapshots =
+CALCULATE(
+    COUNTROWS(FactInventory),
+    FactInventory[is_analysis_eligible] = TRUE()
+)
+
+Stockout Snapshots =
+CALCULATE(
+    COUNTROWS(FactInventory),
+    FactInventory[is_analysis_eligible] = TRUE(),
+    FactInventory[is_stockout] = TRUE()
+)
+
+Stockout Rate =
+DIVIDE([Stockout Snapshots], [Valid Inventory Snapshots])
+
+Shipped Cost of Goods =
+SUMX(
+    FILTER(FactInventory, FactInventory[is_analysis_eligible] = TRUE()),
+    FactInventory[shipped_quantity] * RELATED(DimProduct[unit_cost_eur])
+)
+
+Average Inventory Value =
+AVERAGEX(
+    FILTER(VALUES(DimDate[full_date]), NOT ISBLANK(DimDate[full_date])),
+    CALCULATE(
+        SUMX(
+            FILTER(FactInventory, FactInventory[is_analysis_eligible] = TRUE()),
+            FactInventory[closing_stock] * RELATED(DimProduct[unit_cost_eur])
+        )
+    )
+)
+
+Inventory Turnover =
+DIVIDE([Shipped Cost of Goods], [Average Inventory Value])
+
+// Exceptions and cost
+Shipments With Exception =
+CALCULATE(
+    [Total Shipments],
+    NOT ISBLANK(FactShipments[exception_reason])
+)
+
+Exception Rate =
+DIVIDE([Shipments With Exception], [Total Shipments])
+
+Shipping Cost =
+CALCULATE(
+    SUM(FactShipments[shipping_cost_eur]),
+    FactShipments[is_analysis_eligible] = TRUE()
+)
+
+Average Shipping Cost =
+DIVIDE([Shipping Cost], [Total Shipments])
+
+// Use this only in a visual filtered to one warehouse.
+Average Daily Capacity Utilisation % =
+AVERAGEX(
+    VALUES(DimDate[full_date]),
+    DIVIDE([Non-Cancelled Orders], MAX(DimWarehouse[daily_order_capacity]))
+)
