@@ -97,4 +97,3 @@ These findings describe a deterministic synthetic scenario. They demonstrate ana
 **Business implication:** A company-wide average can hide SKU-specific service risk.
 
 **Recommended action:** Review reorder levels using product demand, supplier lead time, and warehouse-specific stockout frequency instead of one blanket threshold.
-

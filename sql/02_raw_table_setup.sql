@@ -20,7 +20,6 @@ CREATE TABLE raw.products (
     source_file text NOT NULL DEFAULT 'products.csv',
     loaded_at timestamptz NOT NULL DEFAULT clock_timestamp()
 );
-
 CREATE TABLE raw.warehouses (
     source_row_id bigint GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     warehouse_id text,
@@ -100,4 +99,3 @@ CREATE TABLE raw.inventory (
     source_file text NOT NULL DEFAULT 'inventory.csv',
     loaded_at timestamptz NOT NULL DEFAULT clock_timestamp()
 );
-

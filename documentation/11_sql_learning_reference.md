@@ -37,4 +37,3 @@ An `INNER JOIN` between orders and shipments would remove every order that has n
 ## Grain lesson
 
 Always confirm grain before aggregating. Summing order value after joining orders to daily inventory would repeat each order across many inventory rows. Separate fact tables and deliberate joins prevent this double counting.
-

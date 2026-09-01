@@ -12,4 +12,3 @@
 \copy (SELECT * FROM analytics.vw_warehouse_capacity ORDER BY days_over_capacity DESC) TO 'data/processed/warehouse_capacity.csv' WITH (FORMAT csv, HEADER true, ENCODING 'UTF8')
 \copy (SELECT * FROM analytics.vw_customer_segment_performance ORDER BY revenue_eur DESC) TO 'data/processed/customer_segment_performance.csv' WITH (FORMAT csv, HEADER true, ENCODING 'UTF8')
 \copy (SELECT * FROM analytics.vw_high_risk_orders ORDER BY CASE risk_priority WHEN 'Critical' THEN 1 WHEN 'High' THEN 2 WHEN 'Medium' THEN 3 ELSE 4 END, backlog_age_days DESC NULLS LAST LIMIT 500) TO 'data/processed/high_risk_orders.csv' WITH (FORMAT csv, HEADER true, ENCODING 'UTF8')
-

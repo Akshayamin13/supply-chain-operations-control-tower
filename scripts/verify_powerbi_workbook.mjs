@@ -45,4 +45,3 @@ await fs.writeFile(
 );
 
 console.log(JSON.stringify({ workbookPath, reopenStatus: "PASS" }));
-

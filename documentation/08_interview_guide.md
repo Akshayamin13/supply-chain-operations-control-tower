@@ -63,4 +63,3 @@ The pipeline would use controlled ingestion, incremental loads, orchestration, a
 ## Why is the project relevant to German analyst roles?
 
 It demonstrates SQL, PostgreSQL, data validation, KPI governance, dimensional modelling, Power BI planning, inventory and logistics reasoning, root-cause analysis, Git history, and factual documentation—skills commonly transferable across BI, reporting, operations, and supply-chain roles.
-

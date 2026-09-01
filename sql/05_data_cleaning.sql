@@ -368,4 +368,3 @@ ANALYZE clean.shipments;
 ANALYZE clean.inventory;
 
 TABLE audit.cleaning_summary;
-

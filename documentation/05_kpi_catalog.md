@@ -26,4 +26,3 @@ All values describe the synthetic scenario as of 2026-09-01. Percentages use a 0
 ## Important denominator lesson
 
 Different KPIs require different eligibility rules. An order with an invalid shipment date still exists as an order, so it remains in order counts if its order fields are valid. That shipment is excluded only from delivery metrics. Using one universal filter would produce misleading totals.
-

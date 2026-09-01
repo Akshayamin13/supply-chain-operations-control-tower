@@ -46,4 +46,3 @@ Use `measures_browser_aggregate.dax` with this model.
 ## General modelling rules
 
 Do not relate fact or summary tables directly. Hide numeric keys from report view after relationships are created. Sort `DimDate[month_name]` by `month_number` and `DimDate[year_month]` by `month_start_date`.
-

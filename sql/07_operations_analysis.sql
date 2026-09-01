@@ -178,4 +178,3 @@ SELECT order_id,
 FROM analytics.vw_order_fulfilment
 WHERE fulfilment_is_analysis_eligible
   AND (is_backlog OR is_sla_breach);
-

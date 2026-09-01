@@ -15,4 +15,3 @@ Created an end-to-end synthetic operations analytics case study covering source 
 ## Claims not to make
 
 Do not claim that the project reduced real delays, saved money, improved an employer's SLA, or served real users. The dataset and business outcomes are simulated.
-

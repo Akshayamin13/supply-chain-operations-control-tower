@@ -72,7 +72,6 @@ FROM clean.orders
 WHERE is_analysis_eligible
 GROUP BY DATE_TRUNC('month', order_date)::date
 ORDER BY order_month;
-
 -- 7. ROW_NUMBER
 -- Business question: Which raw order rows are duplicates of the same business key?
 WITH ranked_orders AS (
@@ -128,4 +127,3 @@ ORDER BY company_rank;
 SELECT *
 FROM analytics.vw_monthly_trend_with_change
 ORDER BY order_month;
-

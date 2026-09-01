@@ -147,4 +147,3 @@ END $$;
 SELECT table_name, check_name, severity, issue_count, expected_issue_count, check_status
 FROM audit.data_quality_results
 ORDER BY table_name, check_id;
-
