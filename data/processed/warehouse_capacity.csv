@@ -1,0 +1,7 @@
+warehouse_id,warehouse_name,city,daily_order_capacity,average_capacity_utilisation_pct,peak_capacity_utilisation_pct,days_above_90_pct,days_over_capacity
+WH-003,Rhine-Ruhr Fulfilment Centre,Cologne,18,87.56,200.00,161,117
+WH-004,Main Central Hub,Frankfurt,24,73.34,175.00,91,53
+WH-006,Saxony Distribution Hub,Leipzig,17,72.85,170.59,81,53
+WH-001,Spree Fulfilment Centre,Berlin,19,75.56,168.42,92,52
+WH-005,Isar South Centre,Munich,13,67.90,215.38,90,51
+WH-002,Elbe North Hub,Hamburg,15,72.11,166.67,95,44

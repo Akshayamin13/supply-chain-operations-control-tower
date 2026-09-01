@@ -1,0 +1,2 @@
+total_orders,total_shipments,total_revenue_eur,average_order_value_eur,on_time_delivery_pct,late_delivery_pct,average_delivery_delay_days,average_fulfilment_lead_time_days,open_backlog,backlog_over_3_days,backlog_over_7_days,sla_breach_pct,warehouse_throughput_units,stockout_rate_pct,inventory_turnover_ratio,exception_rate_pct
+29873,28366,3221285.15,110.71,62.32,37.68,0.76,1.43,688,553,499,38.78,67281,0.35,4.30,28.14

@@ -1,6 +1,6 @@
 # SQL execution order
 
-The SQL layer will be added gradually and run in numbered order:
+Run the complete layer with `bash scripts/run_pipeline.sh`, or execute these files in order:
 
 1. `01_database_setup.sql`
 2. `02_raw_table_setup.sql`
@@ -11,5 +11,8 @@ The SQL layer will be added gradually and run in numbered order:
 7. `07_operations_analysis.sql`
 8. `08_star_schema.sql`
 9. `09_model_quality_checks.sql`
+10. `10_export_results.sql`
+11. `11_export_powerbi_tables.sql`
+12. `12_sql_learning_queries.sql`
 
-The exact split may be refined as the model develops. SQL files have not been created yet because the source grain and data dictionary must be agreed first.
+The pipeline stops on the first failed import, quality assertion, model test, or SQL error. See `documentation/04_sql_pipeline.md` for the purpose and decisions in each stage.

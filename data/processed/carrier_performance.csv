@@ -1,0 +1,9 @@
+carrier_id,carrier_name,service_level,shipments,delivered_shipments,on_time_delivery_pct,average_delay_days,exception_rate_pct,shipping_cost_eur,average_shipping_cost_eur
+CAR-04,Alpine Freight,Economy,3675,3646,27.98,1.59,34.88,15415.95,4.19
+CAR-06,EuroLink Standard,Economy,3183,3158,30.81,1.43,31.95,13768.67,4.33
+,Unknown Carrier,Unknown,35,35,54.29,1.03,37.14,183.98,5.26
+CAR-02,Nordstern Logistics,Standard,5193,5158,66.60,0.65,28.83,25108.07,4.83
+CAR-01,RheinParcel,Standard,6039,5997,67.18,0.62,26.91,29927.91,4.96
+CAR-05,Elbe Courier,Standard,3971,3950,68.96,0.60,26.01,20314.42,5.12
+CAR-07,RapidRoute,Express,2533,2518,85.90,0.29,24.20,23092.46,9.12
+CAR-03,Mainline Express,Express,3737,3710,86.09,0.25,24.11,35167.62,9.41

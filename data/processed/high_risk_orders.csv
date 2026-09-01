@@ -1,0 +1,501 @@
+order_id,order_date,promised_delivery_date,order_status,warehouse_name,customer_segment,product_name,order_value_eur,backlog_age_days,is_sla_breach,risk_priority
+ORD-029615,2025-09-02,2025-09-06,Processing,Spree Fulfilment Centre,Consumer,Water Bottle 20,37.54,364,t,Critical
+ORD-029191,2025-09-02,2025-09-06,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Protective Sleeve 04,67.90,364,t,Critical
+ORD-026282,2025-09-02,2025-09-06,Processing,Saxony Distribution Hub,Consumer,Yoga Mat 01,276.24,364,t,Critical
+ORD-003216,2025-09-02,2025-09-06,Processing,Main Central Hub,Consumer,Kitchen Scale 14,152.64,364,t,Critical
+ORD-014730,2025-09-02,2025-09-07,Processing,Main Central Hub,Consumer,Fitness Tracker Band 05,140.65,364,t,Critical
+ORD-026544,2025-09-02,2025-09-05,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Laptop Stand 05,54.90,364,t,Critical
+ORD-000522,2025-09-02,2025-09-06,Processing,Spree Fulfilment Centre,Small Business,Charging Pouch 15,68.45,364,t,Critical
+ORD-023581,2025-09-03,2025-09-06,On Hold,Spree Fulfilment Centre,Small Business,Laptop Stand 05,73.27,363,t,Critical
+ORD-015509,2025-09-04,2025-09-08,Processing,Isar South Centre,Consumer,Desk Lamp 03,211.36,362,t,Critical
+ORD-003618,2025-09-04,2025-09-07,Processing,Main Central Hub,Small Business,Coffee Press 02,171.81,362,t,Critical
+ORD-023263,2025-09-05,2025-09-11,On Hold,Elbe North Hub,Consumer,Wireless Mouse 06,81.48,361,t,Critical
+ORD-017726,2025-09-05,2025-09-09,On Hold,Main Central Hub,Small Business,Water Bottle 20,213.23,361,t,Critical
+ORD-008505,2025-09-05,2025-09-10,Processing,Saxony Distribution Hub,Consumer,Wireless Mouse 01,117.14,361,t,Critical
+ORD-029749,2025-09-08,2025-09-13,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Wireless Mouse 06,80.98,358,t,Critical
+ORD-027639,2025-09-08,2025-09-12,Processing,Spree Fulfilment Centre,Consumer,Laptop Stand 05,18.20,358,t,Critical
+ORD-005674,2025-09-08,2025-09-13,Processing,Elbe North Hub,Consumer,Hiking Bottle 08,256.89,358,t,Critical
+ORD-007718,2025-09-10,2025-09-14,Processing,Main Central Hub,Consumer,Water Bottle 20,37.53,356,t,Critical
+ORD-025884,2025-09-10,2025-09-14,Processing,Isar South Centre,Consumer,Storage Set 11,138.24,356,t,Critical
+ORD-005427,2025-09-11,2025-09-14,On Hold,Saxony Distribution Hub,Mid-Market,Coffee Press 17,136.19,355,t,Critical
+ORD-026446,2025-09-13,2025-09-16,Processing,Main Central Hub,Small Business,Laptop Stand 05,36.33,353,t,Critical
+ORD-010408,2025-09-14,2025-09-19,Processing,Main Central Hub,Consumer,Desk Organiser 02,15.43,352,t,Critical
+ORD-001182,2025-09-15,2025-09-19,Processing,Main Central Hub,Consumer,Kitchen Scale 09,34.77,351,t,Critical
+ORD-016030,2025-09-15,2025-09-17,Processing,Elbe North Hub,Small Business,Grooming Kit 12,48.75,351,t,Critical
+ORD-014370,2025-09-16,2025-09-19,On Hold,Saxony Distribution Hub,Consumer,Electric Toothbrush 01,33.43,350,t,Critical
+ORD-001852,2025-09-17,2025-09-20,Processing,Isar South Centre,Consumer,Wireless Mouse 11,62.46,349,t,Critical
+ORD-022383,2025-09-18,2025-09-22,Processing,Main Central Hub,Mid-Market,Skin Care Set 08,140.58,348,t,Critical
+ORD-024195,2025-09-20,2025-09-24,Processing,Spree Fulfilment Centre,Consumer,Resistance Bands 07,98.83,346,t,Critical
+ORD-023266,2025-09-21,2025-09-24,On Hold,Saxony Distribution Hub,Consumer,Coffee Press 02,42.62,345,t,Critical
+ORD-029353,2025-09-22,2025-09-25,On Hold,Spree Fulfilment Centre,Consumer,Storage Set 01,87.69,344,t,Critical
+ORD-014788,2025-09-22,2025-09-24,Processing,Spree Fulfilment Centre,Consumer,Mechanical Keyboard 05,86.82,344,t,Critical
+ORD-019576,2025-09-22,2025-09-27,On Hold,Elbe North Hub,Consumer,Yoga Mat 01,55.33,344,t,Critical
+ORD-029968,2025-09-23,2025-09-26,On Hold,Isar South Centre,Small Business,Phone Stand 06,51.82,343,t,Critical
+ORD-021011,2025-09-23,2025-09-27,On Hold,Main Central Hub,Small Business,Desk Organiser 02,30.48,343,t,Critical
+ORD-022542,2025-09-23,2025-09-29,On Hold,Elbe North Hub,Mid-Market,Storage Set 11,334.84,343,t,Critical
+ORD-011095,2025-09-23,2025-09-26,Processing,Elbe North Hub,Small Business,Massage Roller 05,34.30,343,t,Critical
+ORD-016422,2025-09-26,2025-09-30,On Hold,Rhine-Ruhr Fulfilment Centre,Small Business,Training Bag 19,278.47,340,t,Critical
+ORD-000517,2025-09-27,2025-10-02,Processing,Elbe North Hub,Consumer,Webcam 04,157.52,339,t,Critical
+ORD-004995,2025-09-28,2025-10-03,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Printer Paper 18,14.82,338,t,Critical
+ORD-012840,2025-10-02,2025-10-05,Processing,Elbe North Hub,Consumer,Protective Sleeve 19,36.87,334,t,Critical
+ORD-017998,2025-10-06,2025-10-11,On Hold,Saxony Distribution Hub,Small Business,Kitchen Scale 09,96.46,330,t,Critical
+ORD-011423,2025-10-06,2025-10-10,Processing,Main Central Hub,Consumer,Mechanical Keyboard 15,197.08,330,t,Critical
+ORD-028725,2025-10-06,2025-10-09,On Hold,Main Central Hub,Consumer,Grooming Kit 07,43.18,330,t,Critical
+ORD-025697,2025-10-07,2025-10-10,On Hold,Elbe North Hub,Consumer,Massage Roller 20,10.71,329,t,Critical
+ORD-008922,2025-10-07,2025-10-12,Processing,Isar South Centre,Consumer,Printer Paper 08,10.88,329,t,Critical
+ORD-001542,2025-10-08,2025-10-11,Processing,Spree Fulfilment Centre,Consumer,Storage Set 01,43.39,328,t,Critical
+ORD-010491,2025-10-09,2025-10-12,Processing,Isar South Centre,Small Business,Electric Toothbrush 11,21.59,327,t,Critical
+ORD-014100,2025-10-10,2025-10-13,On Hold,Saxony Distribution Hub,Small Business,Travel Adapter 13,41.90,326,t,Critical
+ORD-023646,2025-10-10,2025-10-15,Processing,Elbe North Hub,Consumer,Wireless Mouse 06,320.87,326,t,Critical
+ORD-022009,2025-10-10,2025-10-13,On Hold,Isar South Centre,Consumer,Travel Adapter 18,20.30,326,t,Critical
+ORD-021161,2025-10-13,2025-10-17,Processing,Spree Fulfilment Centre,Small Business,Coffee Press 02,42.51,323,t,Critical
+ORD-025501,2025-10-15,2025-10-17,Processing,Main Central Hub,Mid-Market,Desk Organiser 12,26.23,321,t,Critical
+ORD-012347,2025-10-16,2025-10-22,Processing,Spree Fulfilment Centre,Consumer,Kitchen Scale 04,98.03,320,t,Critical
+ORD-020766,2025-10-17,2025-10-20,Processing,Isar South Centre,Consumer,Desk Organiser 02,7.79,319,t,Critical
+ORD-006598,2025-10-17,2025-10-21,On Hold,Rhine-Ruhr Fulfilment Centre,Small Business,Kitchen Scale 04,189.42,319,t,Critical
+ORD-021722,2025-10-20,2025-10-25,On Hold,Elbe North Hub,Small Business,Yoga Mat 11,89.79,316,t,Critical
+ORD-015814,2025-10-21,2025-10-25,On Hold,Rhine-Ruhr Fulfilment Centre,Consumer,Massage Roller 15,115.61,315,t,Critical
+ORD-007314,2025-10-26,2025-10-29,Processing,Main Central Hub,Consumer,Hiking Bottle 03,32.30,310,t,Critical
+ORD-011155,2025-10-26,2025-10-29,Processing,Isar South Centre,Consumer,Notebook Set 01,13.92,310,t,Critical
+ORD-021034,2025-10-29,2025-11-01,Processing,Saxony Distribution Hub,Mid-Market,Marker Set 09,55.50,307,t,Critical
+ORD-002290,2025-10-30,2025-11-02,Processing,Saxony Distribution Hub,Consumer,Desk Lamp 13,32.71,306,t,Critical
+ORD-013273,2025-10-31,2025-11-04,Processing,Main Central Hub,Consumer,Protective Sleeve 19,113.71,305,t,Critical
+ORD-023739,2025-11-01,2025-11-04,On Hold,Saxony Distribution Hub,Consumer,Kitchen Scale 14,302.86,304,t,Critical
+ORD-018920,2025-11-02,2025-11-06,Processing,Isar South Centre,Mid-Market,Printer Paper 13,94.17,303,t,Critical
+ORD-017262,2025-11-02,2025-11-05,On Hold,Main Central Hub,Consumer,Phone Stand 01,13.54,303,t,Critical
+ORD-000859,2025-11-03,2025-11-07,Processing,Main Central Hub,Consumer,Kitchen Scale 04,46.76,302,t,Critical
+ORD-016644,2025-11-03,2025-11-06,On Hold,Spree Fulfilment Centre,Consumer,Storage Set 16,161.43,302,t,Critical
+ORD-027554,2025-11-04,2025-11-06,Processing,Main Central Hub,Consumer,Hair Dryer 04,9.61,301,t,Critical
+ORD-006893,2025-11-05,2025-11-08,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Webcam 09,148.24,300,t,Critical
+ORD-009365,2025-11-06,2025-11-09,Processing,Elbe North Hub,Small Business,Grooming Kit 17,66.50,299,t,Critical
+ORD-004090,2025-11-06,2025-11-10,On Hold,Spree Fulfilment Centre,Consumer,Webcam 04,158.65,299,t,Critical
+ORD-023129,2025-11-06,2025-11-10,Processing,Elbe North Hub,Consumer,USB-C Hub 02,218.00,299,t,Critical
+ORD-013243,2025-11-07,2025-11-10,Processing,Isar South Centre,Consumer,Resistance Bands 07,285.60,298,t,Critical
+ORD-000298,2025-11-08,2025-11-11,Processing,Spree Fulfilment Centre,Consumer,Charging Pouch 10,41.23,297,t,Critical
+ORD-025536,2025-11-09,2025-11-13,On Hold,Main Central Hub,Mid-Market,Notebook Set 06,42.31,296,t,Critical
+ORD-029347,2025-11-11,2025-11-15,On Hold,Elbe North Hub,Small Business,Massage Roller 20,10.37,294,t,Critical
+ORD-006457,2025-11-11,2025-11-15,On Hold,Elbe North Hub,Consumer,Webcam 04,160.93,294,t,Critical
+ORD-018686,2025-11-12,2025-11-15,Processing,Elbe North Hub,Mid-Market,Yoga Mat 06,44.35,293,t,Critical
+ORD-024645,2025-11-12,2025-11-15,Processing,Main Central Hub,Mid-Market,Grooming Kit 02,341.73,293,t,Critical
+ORD-012259,2025-11-13,2025-11-18,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Skin Care Set 18,11.09,292,t,Critical
+ORD-022534,2025-11-13,2025-11-18,On Hold,Isar South Centre,Consumer,Desk Lamp 18,79.07,292,t,Critical
+ORD-009950,2025-11-13,2025-11-17,Processing,Isar South Centre,Consumer,Protective Sleeve 04,22.92,292,t,Critical
+ORD-010516,2025-11-13,2025-11-16,Processing,Isar South Centre,Small Business,Hair Dryer 19,32.55,292,t,Critical
+ORD-016541,2025-11-14,2025-11-18,Processing,Main Central Hub,Consumer,Mechanical Keyboard 15,131.06,291,t,Critical
+ORD-029626,2025-11-14,2025-11-19,On Hold,Elbe North Hub,Consumer,Marker Set 14,19.33,291,t,Critical
+ORD-005960,2025-11-17,2025-11-20,On Hold,Spree Fulfilment Centre,Consumer,Travel Adapter 18,20.28,288,t,Critical
+ORD-019433,2025-11-17,2025-11-21,Processing,Main Central Hub,Consumer,Hiking Bottle 03,32.42,288,t,Critical
+ORD-004748,2025-11-18,2025-11-21,Processing,Main Central Hub,Small Business,Hiking Bottle 13,346.16,287,t,Critical
+ORD-015091,2025-11-18,2025-11-21,Processing,Main Central Hub,Small Business,Wireless Mouse 01,111.49,287,t,Critical
+ORD-021717,2025-11-19,2025-11-22,On Hold,Rhine-Ruhr Fulfilment Centre,Consumer,Desk Lamp 08,140.59,286,t,Critical
+ORD-006074,2025-11-19,2025-11-22,On Hold,Main Central Hub,Consumer,Protective Sleeve 04,47.19,286,t,Critical
+ORD-012576,2025-11-19,2025-11-23,Processing,Spree Fulfilment Centre,Small Business,Storage Set 16,106.59,286,t,Critical
+ORD-013411,2025-11-19,2025-11-22,On Hold,Main Central Hub,Small Business,Storage Set 01,128.96,286,t,Critical
+ORD-016993,2025-11-20,2025-11-23,Processing,Main Central Hub,Mid-Market,Water Bottle 05,108.24,285,t,Critical
+ORD-016282,2025-11-20,2025-11-24,On Hold,Saxony Distribution Hub,Consumer,USB-C Hub 12,101.31,285,t,Critical
+ORD-003585,2025-11-21,2025-11-24,On Hold,Elbe North Hub,Consumer,Desk Lamp 08,69.95,284,t,Critical
+ORD-000321,2025-11-21,2025-11-24,Processing,Isar South Centre,Consumer,Training Bag 19,186.07,284,t,Critical
+ORD-002813,2025-11-21,2025-11-25,Processing,Saxony Distribution Hub,Consumer,USB-C Hub 12,103.14,284,t,Critical
+ORD-000107,2025-11-22,2025-11-26,Processing,Rhine-Ruhr Fulfilment Centre,Small Business,Desk Lamp 03,108.80,283,t,Critical
+ORD-028508,2025-11-23,2025-11-28,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,USB-C Hub 12,103.94,282,t,Critical
+ORD-006899,2025-11-23,2025-11-26,Processing,Isar South Centre,Consumer,Printer Paper 08,11.02,282,t,Critical
+ORD-013973,2025-11-23,2025-11-25,On Hold,Isar South Centre,Consumer,Phone Stand 16,32.13,282,t,Critical
+ORD-024538,2025-11-23,2025-11-26,Processing,Saxony Distribution Hub,Small Business,Storage Set 06,65.05,282,t,Critical
+ORD-012244,2025-11-25,2025-11-28,On Hold,Elbe North Hub,Consumer,Resistance Bands 17,71.91,280,t,Critical
+ORD-011090,2025-11-25,2025-11-28,Processing,Main Central Hub,Consumer,Hiking Bottle 18,38.18,280,t,Critical
+ORD-001316,2025-11-25,2025-11-28,Processing,Isar South Centre,Enterprise,Desk Lamp 13,615.50,280,t,Critical
+ORD-002248,2025-11-26,2025-11-30,Processing,Spree Fulfilment Centre,Consumer,Laptop Stand 10,56.29,279,t,Critical
+ORD-016532,2025-11-27,2025-11-30,On Hold,Elbe North Hub,Small Business,Hiking Bottle 13,353.93,278,t,Critical
+ORD-016361,2025-11-27,2025-11-30,On Hold,Saxony Distribution Hub,Small Business,Massage Roller 05,48.38,278,t,Critical
+ORD-001549,2025-11-27,2025-11-30,Processing,Saxony Distribution Hub,Consumer,Wireless Mouse 01,120.68,278,t,Critical
+ORD-014528,2025-11-28,2025-12-02,Processing,Main Central Hub,Small Business,Training Bag 19,274.84,277,t,Critical
+ORD-005708,2025-11-28,2025-12-01,On Hold,Spree Fulfilment Centre,Consumer,Water Bottle 15,101.55,277,t,Critical
+ORD-008509,2025-11-28,2025-12-01,Processing,Main Central Hub,Consumer,Wireless Mouse 01,118.15,277,t,Critical
+ORD-001494,2025-11-28,2025-12-02,Processing,Isar South Centre,Consumer,Coffee Press 02,41.81,277,t,Critical
+ORD-005442,2025-11-28,2025-12-01,Processing,Saxony Distribution Hub,Enterprise,Hiking Bottle 13,1584.81,277,t,Critical
+ORD-001977,2025-11-29,2025-12-04,Processing,Elbe North Hub,Small Business,Printer Paper 08,22.28,276,t,Critical
+ORD-001762,2025-11-30,2025-12-04,On Hold,Rhine-Ruhr Fulfilment Centre,Consumer,Yoga Mat 01,161.18,275,t,Critical
+ORD-029392,2025-12-01,2025-12-05,On Hold,Spree Fulfilment Centre,Consumer,Notebook Set 16,19.68,274,t,Critical
+ORD-020715,2025-12-02,2025-12-04,On Hold,Main Central Hub,Consumer,Grooming Kit 12,48.11,273,t,Critical
+ORD-019046,2025-12-02,2025-12-05,Processing,Rhine-Ruhr Fulfilment Centre,Small Business,Printer Paper 03,19.12,273,t,Critical
+ORD-019290,2025-12-03,2025-12-07,Processing,Main Central Hub,Consumer,Bluetooth Speaker 08,148.36,272,t,Critical
+ORD-023913,2025-12-03,2025-12-07,Processing,Main Central Hub,Consumer,Training Bag 04,220.32,272,t,Critical
+ORD-005872,2025-12-03,2025-12-07,Processing,Rhine-Ruhr Fulfilment Centre,Small Business,Wireless Mouse 01,225.17,272,t,Critical
+ORD-009431,2025-12-03,2025-12-06,Processing,Isar South Centre,Consumer,USB-C Hub 02,110.04,272,t,Critical
+ORD-011150,2025-12-05,2025-12-09,On Hold,Isar South Centre,Consumer,Yoga Mat 11,91.11,270,t,Critical
+ORD-005762,2025-12-05,2025-12-07,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Cable Set 07,24.55,270,t,Critical
+ORD-028885,2025-12-05,2025-12-07,On Hold,Spree Fulfilment Centre,Consumer,Notebook Set 06,14.82,270,t,Critical
+ORD-023685,2025-12-05,2025-12-08,On Hold,Isar South Centre,Consumer,Grooming Kit 07,42.81,270,t,Critical
+ORD-027688,2025-12-05,2025-12-09,Processing,Main Central Hub,Small Business,Wireless Mouse 01,231.78,270,t,Critical
+ORD-002506,2025-12-07,2025-12-11,Processing,Main Central Hub,Small Business,Coffee Press 02,127.09,268,t,Critical
+ORD-025850,2025-12-07,2025-12-11,On Hold,Elbe North Hub,Small Business,USB-C Hub 02,540.50,268,t,Critical
+ORD-007689,2025-12-07,2025-12-10,On Hold,Elbe North Hub,Mid-Market,Grooming Kit 02,67.72,268,t,Critical
+ORD-003851,2025-12-07,2025-12-10,Processing,Elbe North Hub,Consumer,Mechanical Keyboard 20,150.11,268,t,Critical
+ORD-017569,2025-12-09,2025-12-12,Processing,Elbe North Hub,Consumer,Laptop Stand 15,45.12,266,t,Critical
+ORD-011573,2025-12-09,2025-12-13,On Hold,Rhine-Ruhr Fulfilment Centre,Consumer,Grooming Kit 17,34.03,266,t,Critical
+ORD-028262,2025-12-09,2025-12-12,On Hold,Main Central Hub,Consumer,Yoga Mat 01,55.53,266,t,Critical
+ORD-014786,2025-12-11,2025-12-14,Processing,Elbe North Hub,Consumer,Charging Pouch 05,52.57,264,t,Critical
+ORD-002045,2025-12-11,2025-12-14,Processing,Main Central Hub,Consumer,Charging Pouch 20,24.04,264,t,Critical
+ORD-011615,2025-12-12,2025-12-16,On Hold,Saxony Distribution Hub,Consumer,Yoga Mat 11,93.79,263,t,Critical
+ORD-019623,2025-12-12,2025-12-18,Processing,Isar South Centre,Small Business,Mechanical Keyboard 05,169.83,263,t,Critical
+ORD-005010,2025-12-12,2025-12-15,On Hold,Main Central Hub,Small Business,Massage Roller 05,84.33,263,t,Critical
+ORD-011377,2025-12-13,2025-12-16,On Hold,Spree Fulfilment Centre,Consumer,Desk Lamp 13,33.76,262,t,Critical
+ORD-017815,2025-12-14,2025-12-20,On Hold,Main Central Hub,Mid-Market,Wireless Mouse 06,317.70,261,t,Critical
+ORD-023225,2025-12-15,2025-12-18,On Hold,Rhine-Ruhr Fulfilment Centre,Small Business,Water Bottle 15,198.63,260,t,Critical
+ORD-005032,2025-12-15,2025-12-18,On Hold,Spree Fulfilment Centre,Small Business,Training Bag 19,188.53,260,t,Critical
+ORD-013967,2025-12-18,2025-12-20,Processing,Saxony Distribution Hub,Consumer,Massage Roller 15,57.30,257,t,Critical
+ORD-020317,2025-12-18,2025-12-22,On Hold,Rhine-Ruhr Fulfilment Centre,Consumer,Yoga Mat 06,47.66,257,t,Critical
+ORD-014128,2025-12-19,2025-12-23,Processing,Spree Fulfilment Centre,Consumer,Grooming Kit 17,34.56,256,t,Critical
+ORD-001407,2025-12-19,2025-12-24,Processing,Saxony Distribution Hub,Consumer,Charging Pouch 05,51.92,256,t,Critical
+ORD-019411,2025-12-20,2025-12-25,Processing,Elbe North Hub,Consumer,Marker Set 09,38.69,255,t,Critical
+ORD-006268,2025-12-20,2025-12-24,On Hold,Saxony Distribution Hub,Small Business,Desk Organiser 12,8.58,255,t,Critical
+ORD-028968,2025-12-20,2025-12-24,On Hold,Main Central Hub,Consumer,Electric Toothbrush 06,54.66,255,t,Critical
+ORD-015783,2025-12-21,2025-12-25,Processing,Saxony Distribution Hub,Small Business,Desk Organiser 12,17.29,254,t,Critical
+ORD-013505,2025-12-21,2025-12-24,Processing,Main Central Hub,Consumer,Hiking Bottle 13,177.32,254,t,Critical
+ORD-000295,2025-12-21,2025-12-26,On Hold,Rhine-Ruhr Fulfilment Centre,Consumer,Massage Roller 15,29.08,254,t,Critical
+ORD-013249,2025-12-22,2025-12-25,Processing,Elbe North Hub,Small Business,Wireless Mouse 01,472.74,253,t,Critical
+ORD-023086,2025-12-22,2025-12-25,Processing,Main Central Hub,Mid-Market,Yoga Mat 06,142.54,253,t,Critical
+ORD-005205,2025-12-22,2025-12-24,On Hold,Spree Fulfilment Centre,Consumer,Coffee Press 07,30.37,253,t,Critical
+ORD-028497,2025-12-23,2025-12-28,Processing,Rhine-Ruhr Fulfilment Centre,Small Business,Massage Roller 05,16.87,252,t,Critical
+ORD-024171,2025-12-23,2025-12-26,Processing,Spree Fulfilment Centre,Consumer,Notebook Set 01,14.30,252,t,Critical
+ORD-021128,2025-12-24,2025-12-28,On Hold,Main Central Hub,Consumer,USB-C Hub 02,107.90,251,t,Critical
+ORD-024944,2025-12-25,2025-12-28,Processing,Elbe North Hub,Consumer,Marker Set 04,24.99,250,t,Critical
+ORD-000176,2025-12-26,2025-12-30,Processing,Elbe North Hub,Enterprise,Travel Adapter 13,161.03,249,t,Critical
+ORD-012250,2025-12-26,2025-12-31,On Hold,Main Central Hub,Small Business,Protective Sleeve 09,101.07,249,t,Critical
+ORD-002774,2025-12-26,2025-12-31,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Desk Organiser 02,7.73,249,t,Critical
+ORD-025961,2025-12-27,2025-12-30,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Travel Adapter 13,22.43,248,t,Critical
+ORD-025539,2025-12-28,2026-01-01,Processing,Main Central Hub,Consumer,Water Bottle 15,52.70,247,t,Critical
+ORD-028871,2025-12-29,2026-01-03,On Hold,Spree Fulfilment Centre,Consumer,USB-C Hub 12,209.44,246,t,Critical
+ORD-015597,2025-12-29,2026-01-01,On Hold,Rhine-Ruhr Fulfilment Centre,Small Business,Storage Set 01,43.74,246,t,Critical
+ORD-013923,2025-12-30,2026-01-03,On Hold,Rhine-Ruhr Fulfilment Centre,Consumer,Kitchen Scale 19,21.71,245,t,Critical
+ORD-028669,2025-12-31,2026-01-04,Processing,Rhine-Ruhr Fulfilment Centre,Mid-Market,Storage Set 16,423.63,244,t,Critical
+ORD-006791,2026-01-01,2026-01-04,Processing,Elbe North Hub,Mid-Market,Protective Sleeve 14,144.15,243,t,Critical
+ORD-015197,2026-01-02,2026-01-06,On Hold,Spree Fulfilment Centre,Small Business,Webcam 09,278.55,242,t,Critical
+ORD-029625,2026-01-02,2026-01-04,On Hold,Spree Fulfilment Centre,Consumer,Wireless Mouse 01,119.64,242,t,Critical
+ORD-001227,2026-01-03,2026-01-08,On Hold,Saxony Distribution Hub,Small Business,Mechanical Keyboard 15,125.68,241,t,Critical
+ORD-016642,2026-01-05,2026-01-10,Processing,Rhine-Ruhr Fulfilment Centre,Small Business,Skin Care Set 18,54.56,239,t,Critical
+ORD-014332,2026-01-06,2026-01-10,On Hold,Main Central Hub,Consumer,Hiking Bottle 18,191.83,238,t,Critical
+ORD-014822,2026-01-07,2026-01-09,Processing,Isar South Centre,Small Business,Charging Pouch 05,25.77,237,t,Critical
+ORD-027588,2026-01-08,2026-01-13,On Hold,Saxony Distribution Hub,Mid-Market,Printer Paper 18,27.57,236,t,Critical
+ORD-012942,2026-01-08,2026-01-12,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,USB-C Hub 02,105.85,236,t,Critical
+ORD-024399,2026-01-09,2026-01-13,Processing,Rhine-Ruhr Fulfilment Centre,Small Business,Hiking Bottle 03,160.43,235,t,Critical
+ORD-013314,2026-01-13,2026-01-16,On Hold,Main Central Hub,Consumer,Wireless Mouse 16,139.40,231,t,Critical
+ORD-016261,2026-01-14,2026-01-18,Processing,Main Central Hub,Mid-Market,USB-C Hub 02,428.99,230,t,Critical
+ORD-015390,2026-01-14,2026-01-17,On Hold,Saxony Distribution Hub,Consumer,Kitchen Scale 04,48.87,230,t,Critical
+ORD-010667,2026-01-16,2026-01-20,Processing,Spree Fulfilment Centre,Consumer,Hair Dryer 04,19.16,228,t,Critical
+ORD-020400,2026-01-16,2026-01-20,Processing,Elbe North Hub,Consumer,Electric Toothbrush 16,47.28,228,t,Critical
+ORD-002352,2026-01-18,2026-01-21,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Mechanical Keyboard 05,86.42,226,t,Critical
+ORD-016397,2026-01-19,2026-01-21,Processing,Main Central Hub,Mid-Market,Storage Set 16,160.41,225,t,Critical
+ORD-002435,2026-01-20,2026-01-25,Processing,Main Central Hub,Small Business,USB-C Hub 07,434.71,224,t,Critical
+ORD-014950,2026-01-20,2026-01-23,On Hold,Saxony Distribution Hub,Small Business,Notebook Set 11,62.95,224,t,Critical
+ORD-001889,2026-01-20,2026-01-23,Processing,Elbe North Hub,Consumer,Grooming Kit 02,35.41,224,t,Critical
+ORD-009705,2026-01-20,2026-01-24,On Hold,Main Central Hub,Consumer,Cable Set 07,48.09,224,t,Critical
+ORD-004644,2026-01-21,2026-01-26,On Hold,Main Central Hub,Small Business,Massage Roller 05,50.78,223,t,Critical
+ORD-015967,2026-01-22,2026-01-25,On Hold,Spree Fulfilment Centre,Small Business,USB-C Hub 17,316.25,222,t,Critical
+ORD-005429,2026-01-22,2026-01-25,Processing,Main Central Hub,Consumer,Marker Set 14,19.60,222,t,Critical
+ORD-005528,2026-01-23,2026-01-26,Processing,Elbe North Hub,Consumer,Electric Toothbrush 01,68.18,221,t,Critical
+ORD-018522,2026-01-23,2026-01-25,Processing,Rhine-Ruhr Fulfilment Centre,Enterprise,Notebook Set 01,126.04,221,t,Critical
+ORD-009893,2026-01-23,2026-01-28,Processing,Spree Fulfilment Centre,Consumer,Phone Stand 01,13.23,221,t,Critical
+ORD-025743,2026-01-25,2026-01-28,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Desk Organiser 12,9.04,219,t,Critical
+ORD-001573,2026-01-26,2026-01-30,On Hold,Isar South Centre,Consumer,Kitchen Scale 09,33.89,218,t,Critical
+ORD-007486,2026-01-27,2026-01-30,On Hold,Isar South Centre,Consumer,Kitchen Scale 19,21.81,217,t,Critical
+ORD-018985,2026-01-28,2026-01-31,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Wireless Mouse 16,133.91,216,t,Critical
+ORD-002087,2026-01-28,2026-01-31,Processing,Saxony Distribution Hub,Consumer,Protective Sleeve 09,35.22,216,t,Critical
+ORD-019231,2026-01-29,2026-02-01,Processing,Rhine-Ruhr Fulfilment Centre,Small Business,Protective Sleeve 04,67.94,215,t,Critical
+ORD-002234,2026-01-29,2026-02-01,On Hold,Spree Fulfilment Centre,Mid-Market,Desk Lamp 03,156.87,215,t,Critical
+ORD-018278,2026-02-03,2026-02-06,Processing,Main Central Hub,Consumer,Yoga Mat 11,185.30,210,t,Critical
+ORD-026816,2026-02-03,2026-02-07,On Hold,Main Central Hub,Consumer,Charging Pouch 10,20.83,210,t,Critical
+ORD-012909,2026-02-03,2026-02-06,On Hold,Spree Fulfilment Centre,Consumer,Travel Adapter 18,19.81,210,t,Critical
+ORD-016474,2026-02-04,2026-02-06,On Hold,Saxony Distribution Hub,Small Business,Notebook Set 01,55.54,209,t,Critical
+ORD-025700,2026-02-05,2026-02-07,Processing,Rhine-Ruhr Fulfilment Centre,Small Business,Kitchen Scale 19,107.32,208,t,Critical
+ORD-015769,2026-02-06,2026-02-11,Processing,Saxony Distribution Hub,Mid-Market,Marker Set 04,23.86,207,t,Critical
+ORD-028946,2026-02-06,2026-02-10,Processing,Rhine-Ruhr Fulfilment Centre,Small Business,Storage Set 11,69.19,207,t,Critical
+ORD-026931,2026-02-11,2026-02-15,Processing,Main Central Hub,Consumer,Wireless Mouse 06,170.17,202,t,Critical
+ORD-027587,2026-02-11,2026-02-16,Processing,Spree Fulfilment Centre,Consumer,Notebook Set 01,29.04,202,t,Critical
+ORD-028465,2026-02-12,2026-02-14,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Mechanical Keyboard 15,62.48,201,t,Critical
+ORD-020581,2026-02-12,2026-02-18,Processing,Saxony Distribution Hub,Consumer,Fitness Tracker Band 20,202.54,201,t,Critical
+ORD-012479,2026-02-13,2026-02-16,On Hold,Main Central Hub,Consumer,Marker Set 14,9.88,200,t,Critical
+ORD-008378,2026-02-15,2026-02-19,Processing,Saxony Distribution Hub,Consumer,Resistance Bands 17,70.69,198,t,Critical
+ORD-006853,2026-02-15,2026-02-18,On Hold,Spree Fulfilment Centre,Small Business,Yoga Mat 01,153.86,198,t,Critical
+ORD-014711,2026-02-17,2026-02-20,On Hold,Main Central Hub,Consumer,Skin Care Set 13,9.49,196,t,Critical
+ORD-015445,2026-02-18,2026-02-21,Processing,Elbe North Hub,Consumer,Resistance Bands 17,72.44,195,t,Critical
+ORD-027217,2026-02-18,2026-02-22,Processing,Saxony Distribution Hub,Consumer,Electric Toothbrush 01,34.20,195,t,Critical
+ORD-017774,2026-02-19,2026-02-22,Processing,Isar South Centre,Mid-Market,Fitness Tracker Band 05,64.77,194,t,Critical
+ORD-011643,2026-02-22,2026-02-27,Processing,Isar South Centre,Consumer,Massage Roller 15,146.41,191,t,Critical
+ORD-016239,2026-02-23,2026-02-26,On Hold,Main Central Hub,Consumer,Printer Paper 03,19.67,190,t,Critical
+ORD-004254,2026-02-24,2026-02-27,Processing,Main Central Hub,Small Business,Travel Adapter 13,108.94,189,t,Critical
+ORD-009158,2026-02-24,2026-02-28,Processing,Saxony Distribution Hub,Consumer,Fitness Tracker Band 15,152.27,189,t,Critical
+ORD-004571,2026-02-24,2026-02-28,Processing,Main Central Hub,Consumer,Resistance Bands 02,82.54,189,t,Critical
+ORD-000546,2026-02-25,2026-03-02,On Hold,Spree Fulfilment Centre,Consumer,Printer Paper 18,30.05,188,t,Critical
+ORD-015544,2026-02-25,2026-02-28,On Hold,Saxony Distribution Hub,Consumer,Phone Stand 06,25.45,188,t,Critical
+ORD-020282,2026-02-26,2026-03-01,Processing,Saxony Distribution Hub,Consumer,USB-C Hub 07,584.95,187,t,Critical
+ORD-008300,2026-02-27,2026-03-03,Processing,Main Central Hub,Consumer,Charging Pouch 10,42.21,186,t,Critical
+ORD-007343,2026-03-02,2026-03-06,Processing,Isar South Centre,Consumer,Cable Set 02,31.67,183,t,Critical
+ORD-013952,2026-03-03,2026-03-06,On Hold,Saxony Distribution Hub,Small Business,Electric Toothbrush 16,68.37,182,t,Critical
+ORD-001960,2026-03-06,2026-03-11,On Hold,Rhine-Ruhr Fulfilment Centre,Small Business,Grooming Kit 02,71.42,179,t,Critical
+ORD-017204,2026-03-08,2026-03-12,Processing,Spree Fulfilment Centre,Consumer,Storage Set 06,66.68,177,t,Critical
+ORD-025546,2026-03-08,2026-03-12,On Hold,Saxony Distribution Hub,Consumer,Bluetooth Speaker 08,146.72,177,t,Critical
+ORD-008958,2026-03-09,2026-03-12,On Hold,Rhine-Ruhr Fulfilment Centre,Small Business,Fitness Tracker Band 05,139.14,176,t,Critical
+ORD-001622,2026-03-10,2026-03-13,On Hold,Spree Fulfilment Centre,Mid-Market,Phone Stand 01,24.43,175,t,Critical
+ORD-021609,2026-03-10,2026-03-16,On Hold,Spree Fulfilment Centre,Mid-Market,Desk Organiser 07,141.19,175,t,Critical
+ORD-013684,2026-03-11,2026-03-15,Processing,Main Central Hub,Consumer,Electric Toothbrush 16,22.73,174,t,Critical
+ORD-011139,2026-03-11,2026-03-13,Processing,Main Central Hub,Consumer,Desk Organiser 02,16.20,174,t,Critical
+ORD-015889,2026-03-12,2026-03-15,On Hold,Rhine-Ruhr Fulfilment Centre,Consumer,Travel Adapter 03,31.00,173,t,Critical
+ORD-020671,2026-03-13,2026-03-17,Processing,Main Central Hub,Consumer,USB-C Hub 02,220.92,172,t,Critical
+ORD-024155,2026-03-13,2026-03-17,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Yoga Mat 11,139.45,172,t,Critical
+ORD-023928,2026-03-13,2026-03-17,Processing,Saxony Distribution Hub,Mid-Market,Charging Pouch 15,68.57,172,t,Critical
+ORD-013150,2026-03-14,2026-03-17,Processing,Spree Fulfilment Centre,Mid-Market,Webcam 04,145.01,171,t,Critical
+ORD-007747,2026-03-15,2026-03-17,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Resistance Bands 17,70.18,170,t,Critical
+ORD-003100,2026-03-16,2026-03-20,On Hold,Elbe North Hub,Small Business,Hair Dryer 19,32.55,169,t,Critical
+ORD-026615,2026-03-18,2026-03-21,On Hold,Main Central Hub,Consumer,Electric Toothbrush 11,43.30,167,t,Critical
+ORD-002481,2026-03-18,2026-03-20,Processing,Spree Fulfilment Centre,Consumer,Phone Stand 01,13.21,167,t,Critical
+ORD-002539,2026-03-18,2026-03-21,Processing,Main Central Hub,Consumer,Massage Roller 05,34.50,167,t,Critical
+ORD-000621,2026-03-19,2026-03-23,Processing,Elbe North Hub,Small Business,Storage Set 01,85.05,166,t,Critical
+ORD-015338,2026-03-20,2026-03-23,On Hold,Elbe North Hub,Consumer,Electric Toothbrush 06,55.41,165,t,Critical
+ORD-010339,2026-03-21,2026-03-24,Processing,Main Central Hub,Small Business,Fitness Tracker Band 05,134.03,164,t,Critical
+ORD-018587,2026-03-21,2026-03-23,On Hold,Main Central Hub,Consumer,Cable Set 17,53.77,164,t,Critical
+ORD-007435,2026-03-25,2026-03-29,Processing,Elbe North Hub,Consumer,Coffee Press 17,46.44,160,t,Critical
+ORD-012004,2026-03-25,2026-03-27,Processing,Saxony Distribution Hub,Small Business,Mechanical Keyboard 05,164.05,160,t,Critical
+ORD-005805,2026-03-25,2026-03-29,Processing,Isar South Centre,Mid-Market,Protective Sleeve 04,21.18,160,t,Critical
+ORD-011557,2026-03-26,2026-03-29,Processing,Main Central Hub,Small Business,Skin Care Set 08,85.96,159,t,Critical
+ORD-010359,2026-03-27,2026-04-01,Processing,Spree Fulfilment Centre,Consumer,Desk Organiser 02,15.83,158,t,Critical
+ORD-012240,2026-03-27,2026-03-30,On Hold,Elbe North Hub,Small Business,Hair Dryer 19,11.04,158,t,Critical
+ORD-001559,2026-03-27,2026-03-31,On Hold,Spree Fulfilment Centre,Consumer,Storage Set 06,98.00,158,t,Critical
+ORD-006132,2026-03-29,2026-04-03,On Hold,Isar South Centre,Consumer,Wireless Mouse 01,117.14,156,t,Critical
+ORD-023122,2026-03-29,2026-04-02,Processing,Elbe North Hub,Small Business,Kitchen Scale 19,61.60,156,t,Critical
+ORD-008801,2026-03-31,2026-04-04,On Hold,Spree Fulfilment Centre,Consumer,Webcam 14,102.48,154,t,Critical
+ORD-011108,2026-04-02,2026-04-05,Processing,Isar South Centre,Mid-Market,Wireless Mouse 11,288.46,152,t,Critical
+ORD-015998,2026-04-04,2026-04-07,Processing,Saxony Distribution Hub,Consumer,Cable Set 12,69.90,150,t,Critical
+ORD-017061,2026-04-06,2026-04-10,Processing,Elbe North Hub,Small Business,Massage Roller 15,58.68,148,t,Critical
+ORD-026449,2026-04-06,2026-04-09,Processing,Saxony Distribution Hub,Small Business,Laptop Stand 05,36.20,148,t,Critical
+ORD-008601,2026-04-07,2026-04-10,On Hold,Spree Fulfilment Centre,Consumer,Grooming Kit 02,36.84,147,t,Critical
+ORD-006513,2026-04-08,2026-04-12,On Hold,Elbe North Hub,Small Business,Charging Pouch 20,121.73,146,t,Critical
+ORD-006991,2026-04-09,2026-04-12,Processing,Spree Fulfilment Centre,Consumer,Resistance Bands 02,171.79,145,t,Critical
+ORD-012521,2026-04-09,2026-04-12,On Hold,Saxony Distribution Hub,Consumer,Coffee Press 02,86.34,145,t,Critical
+ORD-025833,2026-04-10,2026-04-14,On Hold,Spree Fulfilment Centre,Consumer,Hair Dryer 09,59.74,144,t,Critical
+ORD-019567,2026-04-10,2026-04-14,On Hold,Rhine-Ruhr Fulfilment Centre,Consumer,Hiking Bottle 03,96.47,144,t,Critical
+ORD-022139,2026-04-14,2026-04-19,Processing,Isar South Centre,Consumer,Notebook Set 06,14.72,140,t,Critical
+ORD-015425,2026-04-15,2026-04-17,Processing,Main Central Hub,Consumer,Grooming Kit 12,24.93,139,t,Critical
+ORD-029341,2026-04-16,2026-04-19,On Hold,Saxony Distribution Hub,Consumer,Grooming Kit 07,20.79,138,t,Critical
+ORD-023707,2026-04-17,2026-04-20,Processing,Main Central Hub,Consumer,Webcam 09,148.22,137,t,Critical
+ORD-022809,2026-04-17,2026-04-20,Processing,Elbe North Hub,Small Business,Yoga Mat 06,186.23,137,t,Critical
+ORD-028870,2026-04-17,2026-04-20,On Hold,Isar South Centre,Small Business,Storage Set 01,42.49,137,t,Critical
+ORD-014870,2026-04-19,2026-04-22,On Hold,Spree Fulfilment Centre,Consumer,Webcam 19,132.34,135,t,Critical
+ORD-023241,2026-04-21,2026-04-25,On Hold,Spree Fulfilment Centre,Consumer,Charging Pouch 05,53.28,133,t,Critical
+ORD-000852,2026-04-21,2026-04-24,On Hold,Main Central Hub,Small Business,Water Bottle 15,101.44,133,t,Critical
+ORD-017465,2026-04-23,2026-04-27,Processing,Main Central Hub,Consumer,Hair Dryer 19,10.96,131,t,Critical
+ORD-003598,2026-04-24,2026-04-28,On Hold,Isar South Centre,Consumer,Protective Sleeve 14,38.34,130,t,Critical
+ORD-011054,2026-04-29,2026-05-04,Processing,Spree Fulfilment Centre,Small Business,Coffee Press 12,59.88,125,t,Critical
+ORD-015144,2026-04-29,2026-05-02,Processing,Rhine-Ruhr Fulfilment Centre,Small Business,Phone Stand 06,155.56,125,t,Critical
+ORD-028487,2026-04-29,2026-05-02,On Hold,Main Central Hub,Consumer,Electric Toothbrush 01,100.17,125,t,Critical
+ORD-026321,2026-04-30,2026-05-04,On Hold,Main Central Hub,Consumer,Skin Care Set 18,11.43,124,t,Critical
+ORD-027489,2026-05-01,2026-05-06,On Hold,Saxony Distribution Hub,Small Business,Skin Care Set 08,59.50,123,t,Critical
+ORD-016647,2026-05-01,2026-05-04,On Hold,Main Central Hub,Consumer,Electric Toothbrush 01,66.34,123,t,Critical
+ORD-022055,2026-05-02,2026-05-06,Processing,Elbe North Hub,Small Business,Water Bottle 10,247.97,122,t,Critical
+ORD-001717,2026-05-03,2026-05-06,Processing,Main Central Hub,Small Business,Electric Toothbrush 01,164.58,121,t,Critical
+ORD-023703,2026-05-04,2026-05-07,On Hold,Main Central Hub,Consumer,Wireless Mouse 06,241.78,120,t,Critical
+ORD-020965,2026-05-04,2026-05-07,Processing,Main Central Hub,Consumer,Cable Set 02,16.64,120,t,Critical
+ORD-027088,2026-05-05,2026-05-08,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Cable Set 07,23.85,119,t,Critical
+ORD-016896,2026-05-06,2026-05-09,On Hold,Main Central Hub,Small Business,Phone Stand 01,62.89,118,t,Critical
+ORD-021466,2026-05-06,2026-05-11,On Hold,Elbe North Hub,Consumer,Kitchen Scale 19,21.06,118,t,Critical
+ORD-009301,2026-05-06,2026-05-08,On Hold,Saxony Distribution Hub,Consumer,Webcam 04,316.71,118,t,Critical
+ORD-025423,2026-05-07,2026-05-10,On Hold,Main Central Hub,Small Business,Grooming Kit 02,35.88,117,t,Critical
+ORD-019855,2026-05-07,2026-05-11,On Hold,Isar South Centre,Enterprise,Water Bottle 15,192.76,117,t,Critical
+ORD-029914,2026-05-07,2026-05-13,Processing,Spree Fulfilment Centre,Consumer,Electric Toothbrush 16,22.78,117,t,Critical
+ORD-026742,2026-05-09,2026-05-12,Processing,Main Central Hub,Consumer,USB-C Hub 02,110.74,115,t,Critical
+ORD-010904,2026-05-09,2026-05-13,Processing,Elbe North Hub,Small Business,Cable Set 02,95.90,115,t,Critical
+ORD-004286,2026-05-10,2026-05-14,On Hold,Main Central Hub,Consumer,Protective Sleeve 14,37.44,114,t,Critical
+ORD-016706,2026-05-11,2026-05-14,Processing,Main Central Hub,Consumer,Electric Toothbrush 06,27.53,113,t,Critical
+ORD-024532,2026-05-11,2026-05-15,Processing,Main Central Hub,Consumer,Training Bag 19,95.12,113,t,Critical
+ORD-026720,2026-05-12,2026-05-15,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Coffee Press 02,85.94,112,t,Critical
+ORD-018648,2026-05-15,2026-05-20,Processing,Spree Fulfilment Centre,Consumer,Bluetooth Speaker 08,151.68,109,t,Critical
+ORD-008931,2026-05-15,2026-05-18,On Hold,Rhine-Ruhr Fulfilment Centre,Consumer,Mechanical Keyboard 05,84.26,109,t,Critical
+ORD-019520,2026-05-17,2026-05-19,On Hold,Isar South Centre,Consumer,Hiking Bottle 18,38.14,107,t,Critical
+ORD-011036,2026-05-18,2026-05-21,Processing,Spree Fulfilment Centre,Consumer,Coffee Press 12,63.61,106,t,Critical
+ORD-016434,2026-05-18,2026-05-24,Processing,Main Central Hub,Small Business,Mechanical Keyboard 15,121.86,106,t,Critical
+ORD-027750,2026-05-19,2026-05-22,On Hold,Saxony Distribution Hub,Small Business,Hiking Bottle 03,32.12,105,t,Critical
+ORD-028381,2026-05-19,2026-05-23,Processing,Spree Fulfilment Centre,Mid-Market,Training Bag 04,569.26,105,t,Critical
+ORD-009491,2026-05-20,2026-05-24,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Grooming Kit 02,36.31,104,t,Critical
+ORD-006785,2026-05-22,2026-05-26,On Hold,Saxony Distribution Hub,Mid-Market,Protective Sleeve 09,257.52,102,t,Critical
+ORD-003323,2026-05-22,2026-05-25,On Hold,Rhine-Ruhr Fulfilment Centre,Consumer,Desk Organiser 07,18.63,102,t,Critical
+ORD-023405,2026-05-25,2026-05-29,Processing,Rhine-Ruhr Fulfilment Centre,Mid-Market,USB-C Hub 12,946.65,99,t,Critical
+ORD-014220,2026-05-25,2026-05-29,Processing,Spree Fulfilment Centre,Mid-Market,Grooming Kit 07,20.19,99,t,Critical
+ORD-003297,2026-05-26,2026-05-31,On Hold,Main Central Hub,Consumer,Massage Roller 05,16.98,98,t,Critical
+ORD-006341,2026-05-27,2026-05-30,On Hold,Main Central Hub,Consumer,Notebook Set 16,19.04,97,t,Critical
+ORD-017425,2026-05-28,2026-05-31,On Hold,Rhine-Ruhr Fulfilment Centre,Consumer,Coffee Press 02,86.79,96,t,Critical
+ORD-026651,2026-05-28,2026-06-01,Processing,Elbe North Hub,Small Business,Storage Set 06,157.71,96,t,Critical
+ORD-024168,2026-05-31,2026-06-05,Processing,Saxony Distribution Hub,Consumer,Wireless Mouse 16,139.56,93,t,Critical
+ORD-003050,2026-06-01,2026-06-04,On Hold,Rhine-Ruhr Fulfilment Centre,Small Business,Desk Organiser 17,48.01,92,t,Critical
+ORD-027186,2026-06-02,2026-06-05,Processing,Main Central Hub,Small Business,Printer Paper 13,11.77,91,t,Critical
+ORD-000664,2026-06-03,2026-06-07,On Hold,Saxony Distribution Hub,Consumer,Printer Paper 08,11.48,90,t,Critical
+ORD-004168,2026-06-04,2026-06-09,Processing,Isar South Centre,Consumer,Marker Set 19,49.27,89,t,Critical
+ORD-007463,2026-06-04,2026-06-08,Processing,Rhine-Ruhr Fulfilment Centre,Mid-Market,Hair Dryer 19,32.07,89,t,Critical
+ORD-001713,2026-06-04,2026-06-08,Processing,Elbe North Hub,Consumer,Storage Set 11,71.43,89,t,Critical
+ORD-022559,2026-06-04,2026-06-07,On Hold,Main Central Hub,Small Business,Fitness Tracker Band 05,136.68,89,t,Critical
+ORD-022509,2026-06-05,2026-06-09,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Notebook Set 06,15.22,88,t,Critical
+ORD-019374,2026-06-05,2026-06-08,Processing,Isar South Centre,Consumer,USB-C Hub 17,483.01,88,t,Critical
+ORD-021696,2026-06-05,2026-06-07,On Hold,Main Central Hub,Small Business,Massage Roller 20,29.54,88,t,Critical
+ORD-011179,2026-06-08,2026-06-12,Processing,Main Central Hub,Consumer,Phone Stand 01,27.38,85,t,Critical
+ORD-004891,2026-06-08,2026-06-12,Processing,Elbe North Hub,Consumer,Water Bottle 10,66.68,85,t,Critical
+ORD-025167,2026-06-09,2026-06-12,Processing,Main Central Hub,Consumer,Kitchen Scale 04,144.06,84,t,Critical
+ORD-010876,2026-06-09,2026-06-12,On Hold,Saxony Distribution Hub,Small Business,Fitness Tracker Band 10,136.61,84,t,Critical
+ORD-009928,2026-06-09,2026-06-14,On Hold,Rhine-Ruhr Fulfilment Centre,Consumer,Cable Set 02,16.18,84,t,Critical
+ORD-013525,2026-06-11,2026-06-14,Processing,Rhine-Ruhr Fulfilment Centre,Mid-Market,Desk Lamp 08,66.61,82,t,Critical
+ORD-025453,2026-06-13,2026-06-16,On Hold,Rhine-Ruhr Fulfilment Centre,Enterprise,Protective Sleeve 19,201.79,80,t,Critical
+ORD-024770,2026-06-13,2026-06-17,Processing,Main Central Hub,Small Business,Electric Toothbrush 01,65.15,80,t,Critical
+ORD-010902,2026-06-14,2026-06-17,Processing,Saxony Distribution Hub,Small Business,Bluetooth Speaker 03,284.81,79,t,Critical
+ORD-000396,2026-06-15,2026-06-19,On Hold,Main Central Hub,Consumer,Cable Set 02,33.13,78,t,Critical
+ORD-029270,2026-06-16,2026-06-19,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Electric Toothbrush 06,106.73,77,t,Critical
+ORD-008208,2026-06-16,2026-06-20,Processing,Spree Fulfilment Centre,Consumer,Yoga Mat 16,156.73,77,t,Critical
+ORD-014921,2026-06-17,2026-06-20,On Hold,Saxony Distribution Hub,Consumer,USB-C Hub 17,157.81,76,t,Critical
+ORD-014998,2026-06-18,2026-06-21,On Hold,Spree Fulfilment Centre,Consumer,Massage Roller 10,56.74,75,t,Critical
+ORD-029029,2026-06-18,2026-06-22,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Massage Roller 05,17.43,75,t,Critical
+ORD-028852,2026-06-19,2026-06-23,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Water Bottle 20,37.03,74,t,Critical
+ORD-017233,2026-06-20,2026-06-25,On Hold,Rhine-Ruhr Fulfilment Centre,Mid-Market,Yoga Mat 16,763.52,73,t,Critical
+ORD-007016,2026-06-20,2026-06-23,Processing,Main Central Hub,Consumer,Coffee Press 07,29.51,73,t,Critical
+ORD-015352,2026-06-23,2026-06-25,On Hold,Main Central Hub,Consumer,Storage Set 16,109.25,70,t,Critical
+ORD-009026,2026-06-24,2026-06-29,On Hold,Elbe North Hub,Small Business,Laptop Stand 10,36.50,69,t,Critical
+ORD-022814,2026-06-24,2026-06-28,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Desk Lamp 03,53.52,69,t,Critical
+ORD-025374,2026-06-24,2026-06-27,On Hold,Main Central Hub,Consumer,Kitchen Scale 04,95.43,69,t,Critical
+ORD-001215,2026-06-25,2026-06-30,On Hold,Isar South Centre,Consumer,Resistance Bands 02,170.14,68,t,Critical
+ORD-014371,2026-06-29,2026-07-03,Processing,Elbe North Hub,Consumer,Coffee Press 07,29.46,64,t,Critical
+ORD-005376,2026-06-29,2026-07-04,On Hold,Rhine-Ruhr Fulfilment Centre,Consumer,Storage Set 01,42.47,64,t,Critical
+ORD-024929,2026-06-29,2026-07-03,Processing,Isar South Centre,Consumer,Mechanical Keyboard 05,260.62,64,t,Critical
+ORD-029978,2026-07-01,2026-07-05,On Hold,Saxony Distribution Hub,Consumer,Water Bottle 05,55.36,62,t,Critical
+ORD-013110,2026-07-01,2026-07-05,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Hiking Bottle 13,369.39,62,t,Critical
+ORD-003996,2026-07-02,2026-07-05,Processing,Elbe North Hub,Consumer,Bluetooth Speaker 03,139.41,61,t,Critical
+ORD-005641,2026-07-02,2026-07-05,Processing,Spree Fulfilment Centre,Consumer,Fitness Tracker Band 05,68.78,61,t,Critical
+ORD-008101,2026-07-02,2026-07-04,Processing,Spree Fulfilment Centre,Small Business,Phone Stand 06,73.24,61,t,Critical
+ORD-014911,2026-07-03,2026-07-06,Processing,Rhine-Ruhr Fulfilment Centre,Small Business,Yoga Mat 01,102.24,60,t,Critical
+ORD-024552,2026-07-03,2026-07-06,Processing,Main Central Hub,Consumer,Desk Organiser 07,18.52,60,t,Critical
+ORD-028492,2026-07-04,2026-07-07,Processing,Saxony Distribution Hub,Consumer,Bluetooth Speaker 08,429.36,59,t,Critical
+ORD-028553,2026-07-05,2026-07-07,Processing,Spree Fulfilment Centre,Small Business,Training Bag 04,360.85,58,t,Critical
+ORD-026575,2026-07-06,2026-07-10,Processing,Main Central Hub,Enterprise,Webcam 09,833.37,57,t,Critical
+ORD-027321,2026-07-06,2026-07-09,On Hold,Spree Fulfilment Centre,Consumer,Webcam 04,158.75,57,t,Critical
+ORD-014067,2026-07-07,2026-07-10,Processing,Main Central Hub,Consumer,Webcam 04,163.06,56,t,Critical
+ORD-005853,2026-07-08,2026-07-11,On Hold,Rhine-Ruhr Fulfilment Centre,Small Business,Coffee Press 02,81.74,55,t,Critical
+ORD-027450,2026-07-09,2026-07-12,On Hold,Elbe North Hub,Consumer,Travel Adapter 13,44.13,54,t,Critical
+ORD-007578,2026-07-10,2026-07-13,Processing,Main Central Hub,Consumer,Webcam 09,292.06,53,t,Critical
+ORD-010274,2026-07-10,2026-07-14,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Desk Organiser 02,22.97,53,t,Critical
+ORD-023089,2026-07-10,2026-07-14,On Hold,Main Central Hub,Consumer,Fitness Tracker Band 10,72.29,53,t,Critical
+ORD-024468,2026-07-11,2026-07-16,Processing,Spree Fulfilment Centre,Small Business,Electric Toothbrush 06,76.67,52,t,Critical
+ORD-015550,2026-07-11,2026-07-16,On Hold,Main Central Hub,Small Business,Printer Paper 03,19.53,52,t,Critical
+ORD-014237,2026-07-14,2026-07-18,On Hold,Elbe North Hub,Small Business,Coffee Press 02,200.21,49,t,Critical
+ORD-002688,2026-07-14,2026-07-20,Processing,Main Central Hub,Small Business,Yoga Mat 01,305.06,49,t,Critical
+ORD-026276,2026-07-15,2026-07-20,On Hold,Main Central Hub,Small Business,Webcam 19,382.95,48,t,Critical
+ORD-019757,2026-07-15,2026-07-18,On Hold,Elbe North Hub,Consumer,Travel Adapter 03,31.43,48,t,Critical
+ORD-004332,2026-07-16,2026-07-20,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Webcam 14,193.57,47,t,Critical
+ORD-015364,2026-07-16,2026-07-21,Processing,Spree Fulfilment Centre,Consumer,Skin Care Set 13,18.71,47,t,Critical
+ORD-027260,2026-07-16,2026-07-21,On Hold,Isar South Centre,Consumer,Wireless Mouse 11,177.79,47,t,Critical
+ORD-026281,2026-07-17,2026-07-20,On Hold,Spree Fulfilment Centre,Mid-Market,Bluetooth Speaker 08,424.94,46,t,Critical
+ORD-019052,2026-07-17,2026-07-21,On Hold,Spree Fulfilment Centre,Consumer,Notebook Set 11,16.14,46,t,Critical
+ORD-006937,2026-07-17,2026-07-21,Processing,Main Central Hub,Consumer,Grooming Kit 02,72.40,46,t,Critical
+ORD-018830,2026-07-17,2026-07-20,On Hold,Isar South Centre,Consumer,Wireless Mouse 01,121.37,46,t,Critical
+ORD-004863,2026-07-18,2026-07-21,On Hold,Isar South Centre,Small Business,Kitchen Scale 04,274.84,45,t,Critical
+ORD-001596,2026-07-19,2026-07-24,On Hold,Main Central Hub,Consumer,Training Bag 14,138.87,44,t,Critical
+ORD-006768,2026-07-19,2026-07-23,Processing,Spree Fulfilment Centre,Consumer,Yoga Mat 11,90.23,44,t,Critical
+ORD-007168,2026-07-20,2026-07-23,Processing,Main Central Hub,Small Business,Desk Lamp 18,155.00,43,t,Critical
+ORD-022006,2026-07-20,2026-07-24,Processing,Isar South Centre,Consumer,Hiking Bottle 13,91.22,43,t,Critical
+ORD-015022,2026-07-21,2026-07-23,On Hold,Main Central Hub,Mid-Market,Laptop Stand 20,122.81,42,t,Critical
+ORD-026079,2026-07-21,2026-07-26,Processing,Spree Fulfilment Centre,Consumer,Webcam 19,262.69,42,t,Critical
+ORD-010287,2026-07-21,2026-07-24,Processing,Main Central Hub,Consumer,Coffee Press 07,30.20,42,t,Critical
+ORD-009528,2026-07-22,2026-07-28,Processing,Spree Fulfilment Centre,Mid-Market,Electric Toothbrush 01,101.00,41,t,Critical
+ORD-009735,2026-07-23,2026-07-26,On Hold,Elbe North Hub,Consumer,Bluetooth Speaker 08,149.00,40,t,Critical
+ORD-019657,2026-07-23,2026-07-27,On Hold,Main Central Hub,Consumer,Storage Set 16,55.81,40,t,Critical
+ORD-023288,2026-07-24,2026-07-28,On Hold,Rhine-Ruhr Fulfilment Centre,Consumer,Water Bottle 20,36.50,39,t,Critical
+ORD-029228,2026-07-26,2026-07-30,Processing,Spree Fulfilment Centre,Consumer,Massage Roller 05,17.02,37,t,Critical
+ORD-015612,2026-07-26,2026-07-30,Processing,Rhine-Ruhr Fulfilment Centre,Small Business,Massage Roller 05,33.74,37,t,Critical
+ORD-022373,2026-07-27,2026-08-01,On Hold,Main Central Hub,Consumer,Desk Lamp 08,70.84,36,t,Critical
+ORD-005987,2026-07-27,2026-07-29,On Hold,Elbe North Hub,Mid-Market,Electric Toothbrush 01,32.56,36,t,Critical
+ORD-009924,2026-07-28,2026-08-01,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Kitchen Scale 04,47.30,35,t,Critical
+ORD-009579,2026-07-28,2026-08-01,On Hold,Main Central Hub,Small Business,Cable Set 17,73.05,35,t,Critical
+ORD-017666,2026-07-31,2026-08-03,Processing,Isar South Centre,Consumer,Bluetooth Speaker 13,89.03,32,t,Critical
+ORD-023074,2026-07-31,2026-08-02,On Hold,Isar South Centre,Consumer,Phone Stand 01,13.64,32,t,Critical
+ORD-023355,2026-07-31,2026-08-03,Processing,Main Central Hub,Consumer,Electric Toothbrush 06,27.82,32,t,Critical
+ORD-006110,2026-08-01,2026-08-04,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Resistance Bands 02,170.21,31,t,Critical
+ORD-008088,2026-08-01,2026-08-03,On Hold,Main Central Hub,Consumer,Cable Set 07,24.69,31,t,Critical
+ORD-007529,2026-08-02,2026-08-05,Processing,Main Central Hub,Small Business,Yoga Mat 01,307.79,30,t,Critical
+ORD-011351,2026-08-03,2026-08-06,Processing,Main Central Hub,Consumer,Wireless Mouse 16,137.30,29,t,Critical
+ORD-021608,2026-08-03,2026-08-07,On Hold,Spree Fulfilment Centre,Consumer,Cable Set 12,33.77,29,t,Critical
+ORD-024937,2026-08-03,2026-08-06,Processing,Spree Fulfilment Centre,Mid-Market,Wireless Mouse 01,218.67,29,t,Critical
+ORD-014609,2026-08-04,2026-08-08,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Fitness Tracker Band 15,154.44,28,t,Critical
+ORD-022274,2026-08-06,2026-08-10,On Hold,Isar South Centre,Small Business,Desk Organiser 12,8.79,26,t,Critical
+ORD-016447,2026-08-06,2026-08-09,Processing,Main Central Hub,Consumer,Desk Organiser 02,15.38,26,t,Critical
+ORD-017746,2026-08-07,2026-08-12,On Hold,Elbe North Hub,Consumer,Yoga Mat 01,52.72,25,t,Critical
+ORD-012850,2026-08-07,2026-08-12,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Webcam 09,146.41,25,t,Critical
+ORD-027013,2026-08-09,2026-08-14,Processing,Main Central Hub,Enterprise,Grooming Kit 12,177.52,23,t,Critical
+ORD-025998,2026-08-09,2026-08-12,On Hold,Main Central Hub,Small Business,Yoga Mat 11,173.15,23,t,Critical
+ORD-007917,2026-08-10,2026-08-14,Processing,Saxony Distribution Hub,Consumer,Training Bag 19,96.53,22,t,Critical
+ORD-010116,2026-08-11,2026-08-15,On Hold,Spree Fulfilment Centre,Consumer,Skin Care Set 13,9.35,21,t,Critical
+ORD-022592,2026-08-11,2026-08-14,Packed,Isar South Centre,Consumer,Wireless Mouse 06,83.91,21,t,Critical
+ORD-011040,2026-08-11,2026-08-15,On Hold,Spree Fulfilment Centre,Consumer,Coffee Press 17,46.88,21,t,Critical
+ORD-019449,2026-08-11,2026-08-13,Processing,Spree Fulfilment Centre,Consumer,Notebook Set 01,27.74,21,t,Critical
+ORD-009610,2026-08-11,2026-08-14,Processing,Elbe North Hub,Consumer,Printer Paper 03,20.20,21,t,Critical
+ORD-018952,2026-08-11,2026-08-13,Processing,Isar South Centre,Small Business,Notebook Set 16,92.99,21,t,Critical
+ORD-015478,2026-08-12,2026-08-17,Packed,Saxony Distribution Hub,Consumer,Marker Set 04,12.92,20,t,Critical
+ORD-014989,2026-08-12,2026-08-15,On Hold,Isar South Centre,Consumer,Kitchen Scale 09,32.78,20,t,Critical
+ORD-008191,2026-08-12,2026-08-17,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Hair Dryer 09,23.85,20,t,Critical
+ORD-017347,2026-08-12,2026-08-14,On Hold,Rhine-Ruhr Fulfilment Centre,Consumer,Mechanical Keyboard 20,291.94,20,t,Critical
+ORD-021993,2026-08-12,2026-08-15,On Hold,Main Central Hub,Small Business,Wireless Mouse 06,79.87,20,t,Critical
+ORD-021553,2026-08-12,2026-08-15,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Marker Set 14,10.05,20,t,Critical
+ORD-016907,2026-08-12,2026-08-16,On Hold,Saxony Distribution Hub,Mid-Market,Laptop Stand 20,30.23,20,t,Critical
+ORD-017050,2026-08-13,2026-08-15,On Hold,Rhine-Ruhr Fulfilment Centre,Consumer,Grooming Kit 12,48.47,19,t,Critical
+ORD-022126,2026-08-13,2026-08-18,Processing,Spree Fulfilment Centre,Consumer,Electric Toothbrush 16,46.81,19,t,Critical
+ORD-011262,2026-08-13,2026-08-17,Processing,Main Central Hub,Consumer,Mechanical Keyboard 10,213.06,19,t,Critical
+ORD-016676,2026-08-13,2026-08-16,Processing,Main Central Hub,Consumer,Protective Sleeve 14,75.60,19,t,Critical
+ORD-016337,2026-08-13,2026-08-17,Packed,Rhine-Ruhr Fulfilment Centre,Consumer,Wireless Mouse 01,115.96,19,t,Critical
+ORD-028336,2026-08-13,2026-08-17,On Hold,Isar South Centre,Small Business,Hair Dryer 19,31.09,19,t,Critical
+ORD-017323,2026-08-13,2026-08-17,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Travel Adapter 18,20.41,19,t,Critical
+ORD-014436,2026-08-14,2026-08-17,Processing,Main Central Hub,Enterprise,Resistance Bands 07,1273.43,18,t,Critical
+ORD-021059,2026-08-14,2026-08-16,Processing,Spree Fulfilment Centre,Consumer,Protective Sleeve 09,137.33,18,t,Critical
+ORD-010270,2026-08-14,2026-08-17,Processing,Spree Fulfilment Centre,Mid-Market,Water Bottle 05,100.13,18,t,Critical
+ORD-027030,2026-08-14,2026-08-17,On Hold,Rhine-Ruhr Fulfilment Centre,Enterprise,Marker Set 04,227.01,18,t,Critical
+ORD-026379,2026-08-14,2026-08-17,Processing,Main Central Hub,Consumer,Massage Roller 05,16.78,18,t,Critical
+ORD-003508,2026-08-14,2026-08-17,Processing,Saxony Distribution Hub,Consumer,Phone Stand 11,35.86,18,t,Critical
+ORD-029213,2026-08-14,2026-08-19,Packed,Main Central Hub,Consumer,Marker Set 04,12.27,18,t,Critical
+ORD-023125,2026-08-15,2026-08-18,Packed,Spree Fulfilment Centre,Mid-Market,Training Bag 14,89.63,17,t,Critical
+ORD-014852,2026-08-15,2026-08-19,Processing,Saxony Distribution Hub,Small Business,Bluetooth Speaker 03,408.70,17,t,Critical
+ORD-007643,2026-08-15,2026-08-19,Processing,Isar South Centre,Consumer,Charging Pouch 20,24.37,17,t,Critical
+ORD-017628,2026-08-16,2026-08-22,On Hold,Elbe North Hub,Consumer,Massage Roller 10,14.42,16,t,Critical
+ORD-015103,2026-08-17,2026-08-20,Packed,Rhine-Ruhr Fulfilment Centre,Small Business,Travel Adapter 13,41.66,15,t,Critical
+ORD-013872,2026-08-17,2026-08-19,On Hold,Main Central Hub,Mid-Market,Storage Set 06,29.71,15,t,Critical
+ORD-020153,2026-08-17,2026-08-20,Processing,Main Central Hub,Consumer,Coffee Press 07,87.13,15,t,Critical
+ORD-007632,2026-08-17,2026-08-21,Packed,Rhine-Ruhr Fulfilment Centre,Small Business,Mechanical Keyboard 05,162.61,15,t,Critical
+ORD-002543,2026-08-17,2026-08-21,Processing,Elbe North Hub,Consumer,Mechanical Keyboard 05,345.78,15,t,Critical
+ORD-026204,2026-08-17,2026-08-20,Packed,Spree Fulfilment Centre,Consumer,Storage Set 06,33.42,15,t,Critical
+ORD-011432,2026-08-18,2026-08-21,On Hold,Spree Fulfilment Centre,Consumer,Cable Set 17,18.67,14,t,High
+ORD-008019,2026-08-18,2026-08-22,Processing,Main Central Hub,Consumer,Massage Roller 05,34.84,14,t,High
+ORD-024364,2026-08-18,2026-08-23,Processing,Isar South Centre,Consumer,Storage Set 06,63.22,14,t,High
+ORD-023555,2026-08-18,2026-08-20,Processing,Main Central Hub,Consumer,Resistance Bands 02,86.33,14,t,High
+ORD-007844,2026-08-19,2026-08-22,On Hold,Main Central Hub,Mid-Market,Printer Paper 18,72.32,13,t,High
+ORD-026296,2026-08-19,2026-08-23,Packed,Elbe North Hub,Consumer,Kitchen Scale 04,47.23,13,t,High
+ORD-004540,2026-08-19,2026-08-22,On Hold,Main Central Hub,Consumer,Resistance Bands 17,71.88,13,t,High
+ORD-028847,2026-08-20,2026-08-23,On Hold,Elbe North Hub,Small Business,Water Bottle 05,274.78,12,t,High
+ORD-020728,2026-08-20,2026-08-23,Processing,Main Central Hub,Consumer,Hair Dryer 19,10.96,12,t,High
+ORD-019697,2026-08-20,2026-08-23,Processing,Main Central Hub,Consumer,Wireless Mouse 01,357.84,12,t,High
+ORD-018127,2026-08-21,2026-08-26,On Hold,Rhine-Ruhr Fulfilment Centre,Consumer,Yoga Mat 06,95.20,11,t,High
+ORD-005792,2026-08-21,2026-08-25,Processing,Isar South Centre,Small Business,Wireless Mouse 01,475.76,11,t,High
+ORD-022264,2026-08-21,2026-08-24,On Hold,Main Central Hub,Consumer,Massage Roller 15,29.11,11,t,High
+ORD-017075,2026-08-21,2026-08-25,On Hold,Isar South Centre,Consumer,Notebook Set 01,14.23,11,t,High
+ORD-011302,2026-08-21,2026-08-25,On Hold,Rhine-Ruhr Fulfilment Centre,Consumer,Wireless Mouse 06,84.59,11,t,High
+ORD-023629,2026-08-21,2026-08-25,Processing,Spree Fulfilment Centre,Consumer,Bluetooth Speaker 03,138.45,11,t,High
+ORD-022985,2026-08-21,2026-08-24,Processing,Rhine-Ruhr Fulfilment Centre,Small Business,Hair Dryer 04,28.01,11,t,High
+ORD-023380,2026-08-21,2026-08-26,On Hold,Main Central Hub,Consumer,Water Bottle 10,132.56,11,t,High
+ORD-009884,2026-08-21,2026-08-24,On Hold,Rhine-Ruhr Fulfilment Centre,Consumer,Desk Organiser 02,7.90,11,t,High
+ORD-016923,2026-08-22,2026-08-25,Packed,Rhine-Ruhr Fulfilment Centre,Consumer,Mechanical Keyboard 10,106.06,10,t,High
+ORD-007221,2026-08-22,2026-08-26,Processing,Spree Fulfilment Centre,Consumer,Massage Roller 15,28.42,10,t,High
+ORD-027143,2026-08-22,2026-08-26,Packed,Main Central Hub,Small Business,Fitness Tracker Band 10,204.66,10,t,High
+ORD-027543,2026-08-22,2026-08-26,On Hold,Main Central Hub,Consumer,Massage Roller 05,33.86,10,t,High
+ORD-013350,2026-08-22,2026-08-26,Processing,Rhine-Ruhr Fulfilment Centre,Consumer,Notebook Set 01,14.49,10,t,High
+ORD-024331,2026-08-22,2026-08-25,Processing,Saxony Distribution Hub,Consumer,Laptop Stand 20,16.36,10,t,High
+ORD-024562,2026-08-23,2026-08-27,On Hold,Spree Fulfilment Centre,Consumer,Water Bottle 10,64.26,9,t,High
+ORD-023303,2026-08-23,2026-08-26,Processing,Main Central Hub,Small Business,Yoga Mat 16,155.80,9,t,High
+ORD-007684,2026-08-24,2026-08-28,Processing,Spree Fulfilment Centre,Consumer,Hiking Bottle 08,89.39,8,t,High
+ORD-017257,2026-08-24,2026-08-26,Processing,Main Central Hub,Consumer,Hiking Bottle 08,355.14,8,t,High
+ORD-014982,2026-08-24,2026-08-27,On Hold,Saxony Distribution Hub,Consumer,Storage Set 11,70.64,8,t,High
+ORD-014310,2026-08-24,2026-08-27,On Hold,Spree Fulfilment Centre,Consumer,Training Bag 04,77.21,8,t,High
+ORD-009916,2026-08-24,2026-08-27,Processing,Main Central Hub,Consumer,Printer Paper 13,24.57,8,t,High
+ORD-000700,2026-08-24,2026-08-27,Processing,Elbe North Hub,Consumer,Massage Roller 20,21.38,8,t,High
+ORD-012007,2026-08-24,2026-08-27,Processing,Isar South Centre,Consumer,Travel Adapter 08,29.57,8,t,High
+ORD-015562,2026-08-24,2026-08-28,Packed,Spree Fulfilment Centre,Consumer,USB-C Hub 12,101.72,8,t,High
+ORD-029635,2026-08-25,2026-08-29,Packed,Spree Fulfilment Centre,Consumer,Desk Organiser 17,12.28,7,t,High

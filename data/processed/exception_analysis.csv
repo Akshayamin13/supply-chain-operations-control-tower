@@ -1,0 +1,9 @@
+exception_reason,affected_shipments,share_of_exceptions_pct,average_delay_days,late_deliveries
+Warehouse Capacity,4709,59.00,2.00,3822
+Carrier Delay,2151,26.95,2.42,1867
+Inventory Shortage,276,3.46,3.85,266
+Address Issue,230,2.88,0.82,129
+Weather,193,2.42,1.61,149
+Customer Request,157,1.97,0.72,75
+System Error,139,1.74,0.79,81
+Damaged Shipment,126,1.58,1.60,100

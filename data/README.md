@@ -8,7 +8,7 @@ The folder contains seven source tables covering 2025-09-01 through 2026-08-31. 
 
 ## `processed/`
 
-Controlled exports may be added later for reporting or verification. Their origin and transformation must be documented.
+Eleven controlled exports produced by `sql/10_export_results.sql`. They contain the executive KPI row and the evidence tables used for warehouse, carrier, exception, backlog, stockout, capacity, segment, product-risk, and high-risk-order analysis.
 
 ## `tmp/`
 
@@ -19,3 +19,4 @@ Disposable working files belong here and are ignored by Git.
 - `quality_manifest.json` records the deliberately injected defect counts.
 - `data_profile.json` contains the independent validation result.
 - The generator uses a fixed seed so reruns produce the same source files.
+- PostgreSQL independently reconciles imported rows and all expected defect counts before cleaning begins.

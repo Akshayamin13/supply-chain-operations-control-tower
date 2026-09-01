@@ -1,0 +1,5 @@
+customer_segment,orders,ordered_units,revenue_eur,average_order_value_eur,on_time_delivery_pct
+Consumer,19176,30305,1439061.81,76.98,62.53
+Small Business,6812,17804,824202.82,124.43,62.68
+Mid-Market,2780,11328,516734.07,190.82,62.86
+Enterprise,1070,10229,436765.33,422.40,54.93

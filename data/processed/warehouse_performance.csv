@@ -1,0 +1,7 @@
+warehouse_id,warehouse_name,warehouse_city,eligible_orders,shipments,delivered_shipments,on_time_delivery_pct,average_delay_days,open_backlog,sla_breaches,exception_rate_pct,revenue_eur
+WH-003,Rhine-Ruhr Fulfilment Centre,Cologne,5907,5620,5586,55.62,0.95,126,2593,36.81,657576.85
+WH-001,Spree Fulfilment Centre,Berlin,5373,5103,5067,61.59,0.78,126,2068,25.95,567371.74
+WH-006,Saxony Distribution Hub,Leipzig,4627,4420,4390,63.60,0.70,83,1681,26.67,494272.49
+WH-004,Main Central Hub,Frankfurt,6583,6222,6176,64.22,0.73,190,2383,26.47,701585.18
+WH-005,Isar South Centre,Munich,3305,3138,3115,65.23,0.68,79,1162,26.29,366076.35
+WH-002,Elbe North Hub,Hamburg,4043,3863,3838,66.15,0.66,84,1384,24.26,429881.42

@@ -1,0 +1,3 @@
+stock_position,orders,delivered_orders,late_delivery_pct,average_delay_days,average_fulfilment_lead_time_days
+Stock available,28709,27826,36.98,0.73,1.38
+Stockout on order date,345,333,96.70,3.86,5.04

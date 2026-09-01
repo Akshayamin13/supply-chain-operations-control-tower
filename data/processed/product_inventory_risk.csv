@@ -1,0 +1,121 @@
+product_id,product_name,product_category,valid_snapshot_days,stockout_snapshots,stockout_rate_pct,below_reorder_snapshots,shipped_units,average_closing_stock
+PRD-0029,Kitchen Scale 09,Home & Kitchen,2190,52,2.37,127,553,18.82
+PRD-0041,Electric Toothbrush 01,Personal Care,2190,48,2.19,201,1132,27.23
+PRD-0003,Bluetooth Speaker 03,Electronics,2190,26,1.19,130,752,22.95
+PRD-0008,Bluetooth Speaker 08,Electronics,2190,25,1.14,99,367,15.69
+PRD-0083,Printer Paper 03,Office Supplies,2189,23,1.05,90,675,25.78
+PRD-0001,Wireless Mouse 01,Electronics,2190,22,1.00,131,1131,33.11
+PRD-0084,Marker Set 04,Office Supplies,2189,21,0.96,117,723,24.70
+PRD-0115,Charging Pouch 15,Accessories,2189,20,0.91,99,540,19.91
+PRD-0004,Webcam 04,Electronics,2190,19,0.87,147,799,21.52
+PRD-0120,Charging Pouch 20,Accessories,2189,19,0.87,107,443,17.06
+PRD-0117,Cable Set 17,Accessories,2188,18,0.82,80,605,22.23
+PRD-0048,Skin Care Set 08,Personal Care,2190,18,0.82,104,513,19.23
+PRD-0053,Skin Care Set 13,Personal Care,2189,18,0.82,99,497,19.47
+PRD-0033,Desk Lamp 13,Home & Kitchen,2190,18,0.82,81,483,18.20
+PRD-0101,Phone Stand 01,Accessories,2189,17,0.78,129,1293,30.99
+PRD-0100,Laptop Stand 20,Office Supplies,2188,17,0.78,87,476,18.54
+PRD-0066,Yoga Mat 06,Sports & Outdoors,2190,16,0.73,81,739,25.77
+PRD-0089,Marker Set 09,Office Supplies,2189,16,0.73,81,403,22.31
+PRD-0032,Coffee Press 12,Home & Kitchen,2190,16,0.73,77,397,19.79
+PRD-0068,Hiking Bottle 08,Sports & Outdoors,2188,15,0.69,126,551,20.02
+PRD-0010,Mechanical Keyboard 10,Electronics,2188,15,0.69,51,342,19.92
+PRD-0059,Hair Dryer 19,Personal Care,2189,14,0.64,115,600,21.42
+PRD-0025,Water Bottle 05,Home & Kitchen,2190,13,0.59,124,745,23.72
+PRD-0078,Hiking Bottle 18,Sports & Outdoors,2190,13,0.59,103,481,19.25
+PRD-0071,Yoga Mat 11,Sports & Outdoors,2190,13,0.59,97,469,19.15
+PRD-0031,Storage Set 11,Home & Kitchen,2189,13,0.59,99,428,17.16
+PRD-0020,Mechanical Keyboard 20,Electronics,2189,12,0.55,81,458,18.38
+PRD-0015,Mechanical Keyboard 15,Electronics,2189,11,0.50,137,518,18.13
+PRD-0011,Wireless Mouse 11,Electronics,2190,11,0.50,79,401,16.52
+PRD-0036,Storage Set 16,Home & Kitchen,2189,11,0.50,82,391,18.97
+PRD-0057,Grooming Kit 17,Personal Care,2189,11,0.50,49,305,16.41
+PRD-0006,Wireless Mouse 06,Electronics,2190,10,0.46,105,735,25.90
+PRD-0092,Desk Organiser 12,Office Supplies,2189,10,0.46,101,503,23.50
+PRD-0099,Marker Set 19,Office Supplies,2190,10,0.46,81,493,19.74
+PRD-0052,Grooming Kit 12,Personal Care,2190,10,0.46,74,273,17.26
+PRD-0043,Skin Care Set 03,Personal Care,2189,9,0.41,110,761,24.10
+PRD-0044,Hair Dryer 04,Personal Care,2189,9,0.41,131,759,23.85
+PRD-0026,Storage Set 06,Home & Kitchen,2190,9,0.41,97,710,24.98
+PRD-0114,Protective Sleeve 14,Accessories,2189,9,0.41,93,507,19.93
+PRD-0093,Printer Paper 13,Office Supplies,2189,9,0.41,78,441,21.91
+PRD-0055,Massage Roller 15,Personal Care,2189,9,0.41,74,398,20.01
+PRD-0080,Fitness Tracker Band 20,Sports & Outdoors,2189,9,0.41,33,306,21.77
+PRD-0002,USB-C Hub 02,Electronics,2190,8,0.37,147,1225,30.62
+PRD-0021,Storage Set 01,Home & Kitchen,2189,8,0.37,110,1177,30.31
+PRD-0082,Desk Organiser 02,Office Supplies,2190,8,0.37,105,1048,32.40
+PRD-0005,Mechanical Keyboard 05,Electronics,2189,8,0.37,107,784,25.11
+PRD-0065,Fitness Tracker Band 05,Sports & Outdoors,2189,8,0.37,117,702,23.88
+PRD-0072,Resistance Bands 12,Sports & Outdoors,2189,8,0.37,65,501,23.40
+PRD-0039,Kitchen Scale 19,Home & Kitchen,2190,8,0.37,103,459,18.00
+PRD-0119,Protective Sleeve 19,Accessories,2190,8,0.37,59,444,18.44
+PRD-0030,Water Bottle 10,Home & Kitchen,2190,7,0.32,102,466,18.35
+PRD-0040,Water Bottle 20,Home & Kitchen,2190,7,0.32,63,452,22.81
+PRD-0076,Yoga Mat 16,Sports & Outdoors,2190,7,0.32,71,415,20.00
+PRD-0017,USB-C Hub 17,Electronics,2190,7,0.32,68,403,21.02
+PRD-0088,Printer Paper 08,Office Supplies,2189,7,0.32,93,401,21.47
+PRD-0067,Resistance Bands 07,Sports & Outdoors,2188,7,0.32,46,313,19.95
+PRD-0049,Hair Dryer 09,Personal Care,2190,6,0.27,94,491,18.89
+PRD-0097,Desk Organiser 17,Office Supplies,2190,6,0.27,89,461,20.07
+PRD-0103,Travel Adapter 03,Accessories,2189,5,0.23,69,722,25.37
+PRD-0113,Travel Adapter 13,Accessories,2190,5,0.23,77,482,19.36
+PRD-0109,Protective Sleeve 09,Accessories,2190,5,0.23,86,404,16.90
+PRD-0094,Marker Set 14,Office Supplies,2190,5,0.23,82,308,16.03
+PRD-0007,USB-C Hub 07,Electronics,2189,5,0.23,72,290,17.67
+PRD-0106,Phone Stand 06,Accessories,2189,4,0.18,107,831,24.90
+PRD-0045,Massage Roller 05,Personal Care,2190,4,0.18,78,778,25.19
+PRD-0074,Training Bag 14,Sports & Outdoors,2190,4,0.18,77,430,20.51
+PRD-0077,Resistance Bands 17,Sports & Outdoors,2190,4,0.18,75,370,19.40
+PRD-0013,Bluetooth Speaker 13,Electronics,2190,4,0.18,77,362,21.24
+PRD-0054,Hair Dryer 14,Personal Care,2189,4,0.18,45,329,19.39
+PRD-0037,Coffee Press 17,Home & Kitchen,2190,4,0.18,71,310,16.35
+PRD-0016,Wireless Mouse 16,Electronics,2190,3,0.14,75,546,23.29
+PRD-0060,Massage Roller 20,Personal Care,2190,3,0.14,77,511,23.31
+PRD-0116,Phone Stand 16,Accessories,2188,3,0.14,52,459,26.65
+PRD-0034,Kitchen Scale 14,Home & Kitchen,2190,3,0.14,102,375,16.82
+PRD-0090,Laptop Stand 10,Office Supplies,2190,3,0.14,63,254,17.96
+PRD-0062,Resistance Bands 02,Sports & Outdoors,2189,2,0.09,139,1164,34.85
+PRD-0061,Yoga Mat 01,Sports & Outdoors,2189,2,0.09,145,1138,30.58
+PRD-0042,Grooming Kit 02,Personal Care,2189,2,0.09,141,1127,33.91
+PRD-0023,Desk Lamp 03,Home & Kitchen,2188,2,0.09,112,809,22.47
+PRD-0086,Notebook Set 06,Office Supplies,2190,2,0.09,78,760,29.83
+PRD-0009,Webcam 09,Electronics,2189,2,0.09,125,477,18.34
+PRD-0108,Travel Adapter 08,Accessories,2190,2,0.09,60,458,20.38
+PRD-0056,Electric Toothbrush 16,Personal Care,2189,2,0.09,109,448,17.35
+PRD-0095,Laptop Stand 15,Office Supplies,2190,2,0.09,78,425,19.19
+PRD-0098,Printer Paper 18,Office Supplies,2189,2,0.09,70,415,22.23
+PRD-0014,Webcam 14,Electronics,2189,2,0.09,68,369,20.94
+PRD-0058,Skin Care Set 18,Personal Care,2190,2,0.09,76,346,20.82
+PRD-0112,Cable Set 12,Accessories,2189,2,0.09,81,328,15.74
+PRD-0111,Phone Stand 11,Accessories,2190,2,0.09,51,297,17.15
+PRD-0091,Notebook Set 11,Office Supplies,2190,2,0.09,56,249,17.96
+PRD-0102,Cable Set 02,Accessories,2189,1,0.05,160,1220,27.30
+PRD-0081,Notebook Set 01,Office Supplies,2190,1,0.05,88,1102,33.64
+PRD-0105,Charging Pouch 05,Accessories,2190,1,0.05,93,810,23.49
+PRD-0024,Kitchen Scale 04,Home & Kitchen,2188,1,0.05,107,714,24.15
+PRD-0075,Fitness Tracker Band 15,Sports & Outdoors,2189,1,0.05,54,597,22.37
+PRD-0012,USB-C Hub 12,Electronics,2187,1,0.05,105,537,22.43
+PRD-0118,Travel Adapter 18,Accessories,2190,1,0.05,103,439,20.10
+PRD-0079,Training Bag 19,Sports & Outdoors,2189,1,0.05,44,392,23.67
+PRD-0069,Training Bag 09,Sports & Outdoors,2189,1,0.05,100,354,17.96
+PRD-0028,Desk Lamp 08,Home & Kitchen,2190,1,0.05,59,316,18.59
+PRD-0022,Coffee Press 02,Home & Kitchen,2188,0,0.00,86,1104,30.80
+PRD-0085,Laptop Stand 05,Office Supplies,2189,0,0.00,121,805,24.08
+PRD-0104,Protective Sleeve 04,Accessories,2190,0,0.00,105,771,24.18
+PRD-0064,Training Bag 04,Sports & Outdoors,2189,0,0.00,85,754,27.17
+PRD-0046,Electric Toothbrush 06,Personal Care,2190,0,0.00,152,731,21.71
+PRD-0063,Hiking Bottle 03,Sports & Outdoors,2188,0,0.00,88,705,23.40
+PRD-0087,Desk Organiser 07,Office Supplies,2190,0,0.00,79,512,21.71
+PRD-0018,Bluetooth Speaker 18,Electronics,2188,0,0.00,121,469,19.29
+PRD-0110,Charging Pouch 10,Accessories,2189,0,0.00,66,445,21.66
+PRD-0019,Webcam 19,Electronics,2189,0,0.00,113,441,18.16
+PRD-0035,Water Bottle 15,Home & Kitchen,2189,0,0.00,77,441,19.05
+PRD-0073,Hiking Bottle 13,Sports & Outdoors,2190,0,0.00,73,404,17.06
+PRD-0027,Coffee Press 07,Home & Kitchen,2190,0,0.00,62,399,21.32
+PRD-0047,Grooming Kit 07,Personal Care,2190,0,0.00,108,391,18.66
+PRD-0107,Cable Set 07,Accessories,2189,0,0.00,91,386,16.83
+PRD-0096,Notebook Set 16,Office Supplies,2189,0,0.00,59,370,18.15
+PRD-0050,Massage Roller 10,Personal Care,2190,0,0.00,65,345,18.87
+PRD-0051,Electric Toothbrush 11,Personal Care,2189,0,0.00,59,338,20.32
+PRD-0038,Desk Lamp 18,Home & Kitchen,2190,0,0.00,88,300,18.32
+PRD-0070,Fitness Tracker Band 10,Sports & Outdoors,2189,0,0.00,52,280,21.14
