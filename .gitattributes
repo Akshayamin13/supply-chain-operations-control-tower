@@ -1,0 +1,4 @@
+# CSV source files intentionally contain controlled whitespace anomalies and use
+# CSV-native line endings. Preserve those bytes and exclude them from code-style
+# whitespace warnings.
+*.csv -whitespace

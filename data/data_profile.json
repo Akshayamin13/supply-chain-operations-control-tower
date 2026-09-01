@@ -6,7 +6,7 @@
     "carriers": 7,
     "customers": 4000,
     "orders": 30060,
-    "shipments": 28642,
+    "shipments": 28584,
     "inventory": 262880
   },
   "unique_business_keys": {
@@ -53,11 +53,11 @@
     "cancelled": 776,
     "delivered": 28367,
     "dispatchd": 8,
-    "in transit": 252,
-    "on hold": 237,
+    "in transit": 194,
+    "on hold": 239,
     "on-hold": 10,
     "packed": 61,
-    "processing": 343
+    "processing": 399
   },
   "failures": []
 }

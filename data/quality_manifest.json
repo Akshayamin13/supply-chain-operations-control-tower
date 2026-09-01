@@ -11,7 +11,7 @@
     "carriers": 7,
     "customers": 4000,
     "orders": 30060,
-    "shipments": 28642,
+    "shipments": 28584,
     "inventory": 262880
   },
   "expected_quality_issues": {
@@ -30,7 +30,7 @@
       "duplicate_extra_rows": 60
     },
     "shipments": {
-      "canonical_rows": 28592,
+      "canonical_rows": 28534,
       "duplicate_extra_rows": 50,
       "missing_carrier_id": 35,
       "orphan_order_id": 12,

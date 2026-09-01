@@ -422,6 +422,10 @@ def generate_shipments(
                 exception_reason = "Customer Request"
                 transit_days += 1
 
+        if ship_date >= ANALYSIS_DATE:
+            order["order_status"] = "On Hold" if stockout else "Processing"
+            continue
+
         actual_delivery = ship_date + timedelta(days=transit_days)
         status = order["order_status"]
         if status == "Delivered" and actual_delivery >= ANALYSIS_DATE:
