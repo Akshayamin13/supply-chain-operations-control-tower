@@ -1,6 +1,6 @@
 # Project status
 
-## Current gate: Phase 1 — environment setup
+## Current gate: Phase 4 — PostgreSQL raw layer
 
 | Check | Status |
 |---|---|
@@ -11,7 +11,8 @@
 | PostgreSQL 16 server reachable | Complete |
 | Local project repository created | Complete |
 | First Git commit created | Complete |
-| Synthetic data generated | Not started |
+| Source design and data dictionary | Complete |
+| Synthetic data generated | Complete — validation passed |
 | PostgreSQL project database created | Not started |
 | Raw data imported | Not started |
 | Data quality and cleaning | Not started |

@@ -501,7 +501,9 @@ def inject_order_quality(orders: List[Dict[str, Any]]) -> Tuple[List[Dict[str, A
             row["promised_delivery_date"] = iso(order_date - timedelta(days=2))
         elif index in quality_sets["noncanonical_status"]:
             row["order_status"] = status_variants[index % len(status_variants)]
-    duplicate_indices = QUALITY_RNG.sample(range(len(raw_orders)), 60)
+    injected_indices = set().union(*quality_sets.values())
+    duplicate_candidates = sorted(set(range(len(raw_orders))) - injected_indices)
+    duplicate_indices = QUALITY_RNG.sample(duplicate_candidates, 60)
     raw_orders.extend(dict(raw_orders[index]) for index in duplicate_indices)
     expected = {name: len(indices) for name, indices in quality_sets.items()}
     expected["canonical_rows"] = len(orders)
@@ -530,7 +532,9 @@ def inject_shipment_quality(shipments: List[Dict[str, Any]]) -> Tuple[List[Dict[
             row["order_id"] = f"ORD-ORPHAN-{index:05d}"
         elif index in noncanonical_status:
             row["shipment_status"] = status_variants[index % len(status_variants)]
-    duplicate_indices = QUALITY_RNG.sample(range(len(raw_shipments)), 50)
+    injected_indices = before_delivery | missing_carrier | orphan_order | noncanonical_status
+    duplicate_candidates = sorted(set(range(len(raw_shipments))) - injected_indices)
+    duplicate_indices = QUALITY_RNG.sample(duplicate_candidates, 50)
     raw_shipments.extend(dict(raw_shipments[index]) for index in duplicate_indices)
     expected = {
         "canonical_rows": len(shipments),
@@ -617,4 +621,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

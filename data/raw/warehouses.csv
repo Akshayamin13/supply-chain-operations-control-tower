@@ -1,0 +1,7 @@
+warehouse_id,warehouse_name,city,country,storage_capacity_units,daily_order_capacity
+WH-001,Spree Fulfilment Centre,Berlin,DE,48000,19
+WH-002,Elbe North Hub,Hamburg,DE,39000,15
+WH-003,Rhine-Ruhr Fulfilment Centre,Cologne,DE,46000,18
+WH-004,Main Central Hub,Frankfurt,DE,55000,24
+WH-005,Isar South Centre,Munich,DE,34000,13
+WH-006,Saxony Distribution Hub,Leipzig,DE,42000,17

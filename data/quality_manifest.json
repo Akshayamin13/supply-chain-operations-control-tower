@@ -1,0 +1,49 @@
+{
+  "seed": 20260901,
+  "analysis_period": {
+    "start": "2025-09-01",
+    "end": "2026-08-31",
+    "analysis_date": "2026-09-01"
+  },
+  "source_row_counts": {
+    "products": 120,
+    "warehouses": 6,
+    "carriers": 7,
+    "customers": 4000,
+    "orders": 30060,
+    "shipments": 28642,
+    "inventory": 262880
+  },
+  "expected_quality_issues": {
+    "products": {
+      "noncanonical_category": 12
+    },
+    "orders": {
+      "missing_customer_id": 20,
+      "missing_product_id": 18,
+      "missing_warehouse_id": 24,
+      "unmapped_warehouse_id": 10,
+      "negative_quantity": 25,
+      "promised_before_order": 30,
+      "noncanonical_status": 45,
+      "canonical_rows": 30000,
+      "duplicate_extra_rows": 60
+    },
+    "shipments": {
+      "canonical_rows": 28592,
+      "duplicate_extra_rows": 50,
+      "missing_carrier_id": 35,
+      "orphan_order_id": 12,
+      "delivery_before_ship": 35,
+      "noncanonical_status": 30
+    },
+    "inventory": {
+      "canonical_rows": 262800,
+      "duplicate_extra_rows": 80,
+      "missing_product_id": 15,
+      "negative_closing_stock": 20,
+      "balance_mismatch": 60
+    }
+  },
+  "synthetic_data_notice": "All records and organisations are fictional. Performance results describe only this simulated scenario."
+}

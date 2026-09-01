@@ -1,0 +1,8 @@
+carrier_id,carrier_name,service_level,base_transit_days
+CAR-01,RheinParcel,Standard,2
+CAR-02,Nordstern Logistics,Standard,2
+CAR-03,Mainline Express,Express,1
+CAR-04,Alpine Freight,Economy,3
+CAR-05,Elbe Courier,Standard,2
+CAR-06,EuroLink Standard,Economy,3
+CAR-07,RapidRoute,Express,1
