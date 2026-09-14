@@ -11,6 +11,7 @@ All companies, people, orders, and results are synthetic. The project demonstrat
 - PostgreSQL pipeline from immutable raw data through cleaned tables, analytical views, and a star schema
 - 18 source-data checks and 10 dimensional-model checks, all enforced by SQL
 - decision-focused KPI and root-cause queries for delivery, backlog, warehouse capacity, inventory, carriers, and customer segments
+- an interactive web dashboard with executive, fulfilment, inventory, and diagnostic views
 - a browser-ready Excel source, two DAX measure libraries, relationship maps, a theme, and a four-page Power BI dashboard specification
 - beginner-friendly learning notes, an interview guide, CV bullets, and full reproduction instructions
 
@@ -38,6 +39,7 @@ flowchart LR
     E --> G[Portfolio CSV exports]
     F --> H[Power BI source workbook]
     H --> I[DAX model and dashboard plan]
+    G --> J[Interactive web dashboard]
 ```
 
 The raw layer preserves source-like records. The clean layer standardises and flags them without hiding rejected rows. The analytics layer contains reusable KPI views and a dimensional model designed for BI reporting.
@@ -101,6 +103,12 @@ The full PostgreSQL model retains transaction-level detail:
 | `analytics.fact_inventory` | one product–warehouse–date snapshot | 262,800 |
 
 Shared dimensions are Date, Product, Customer, Warehouse, and Carrier. Unknown-member rows protect model integrity when source keys are missing or invalid. The design and relationship rules are explained in [dimensional model](documentation/06_dimensional_model.md).
+
+## Interactive dashboard
+
+Open the [Supply Chain Operations Control Tower dashboard](https://akshay-operations-control-tower.akshaydrashti77.chatgpt.site) to explore the validated portfolio results through four interactive views. It includes warehouse, carrier, and product-category filters; executive KPIs; monthly trends; fulfilment and inventory analysis; and high-risk order diagnostics.
+
+The current deployment is private and requires the project owner's signed-in account. Like the underlying project, all dashboard data is synthetic.
 
 ## Power BI package for an Intel Mac
 
