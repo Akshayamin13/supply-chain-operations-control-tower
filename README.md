@@ -106,9 +106,9 @@ Shared dimensions are Date, Product, Customer, Warehouse, and Carrier. Unknown-m
 
 ## Interactive dashboard
 
-Open the [Supply Chain Operations Control Tower dashboard](https://akshay-operations-control-tower.akshaydrashti77.chatgpt.site) to explore the validated portfolio results through four interactive views. It includes warehouse, carrier, and product-category filters; executive KPIs; monthly trends; fulfilment and inventory analysis; and high-risk order diagnostics.
+Open the public [Supply Chain Operations Control Tower dashboard](https://akshayamin13.github.io/supply-chain-control-tower-dashboard/) to explore the validated portfolio results through four interactive views. It includes warehouse, carrier, and product-category filters; executive KPIs; monthly trends; fulfilment and inventory analysis; and high-risk order diagnostics.
 
-The current deployment is private and requires the project owner's signed-in account. Like the underlying project, all dashboard data is synthetic.
+The dashboard requires no sign-in, and its [source repository](https://github.com/Akshayamin13/supply-chain-control-tower-dashboard) is public. Like the underlying project, all dashboard data is synthetic.
 
 ## Power BI package for an Intel Mac
 
