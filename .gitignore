@@ -21,6 +21,7 @@ data/tmp/*
 !data/tmp/.gitkeep
 node_modules
 node_modules/
+dashboard/dist-pages/
 *.inspect.ndjson
 
 # Logs and database dumps

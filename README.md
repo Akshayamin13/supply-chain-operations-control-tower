@@ -1,56 +1,63 @@
 # Supply Chain & Operations Control Tower
 
-An end-to-end BI and operations analytics portfolio project for a fictional German fulfilment network. It turns intentionally imperfect source files into tested PostgreSQL data, management KPIs, root-cause analysis, a dimensional model, and a Power BI-ready reporting package.
+I built this project around a realistic operations problem: a German fulfilment network has order, shipment, inventory, customer, warehouse, product, and carrier data in separate files, but no reliable view of delivery performance or operational risk. The project takes those raw files through data-quality testing, cleaning, SQL analysis, dimensional modelling, and an interactive management dashboard.
 
-All companies, people, orders, and results are synthetic. The project demonstrates analytical method and technical capability; it does not claim real business impact.
+All records and business results are synthetic. This is a portfolio case study and does not claim work completed for a real company.
 
-## Portfolio outcome
+**[Open the live dashboard](https://akshayamin13.github.io/supply-chain-operations-control-tower/)**
 
-- 30,000 unique orders across 12 months, with connected shipment, inventory, product, warehouse, carrier, and customer data
-- reproducible Python data generation with a fixed seed and a machine-readable quality manifest
-- PostgreSQL pipeline from immutable raw data through cleaned tables, analytical views, and a star schema
-- 18 source-data checks and 10 dimensional-model checks, all enforced by SQL
-- decision-focused KPI and root-cause queries for delivery, backlog, warehouse capacity, inventory, carriers, and customer segments
-- an interactive web dashboard with executive, fulfilment, inventory, and diagnostic views
-- a browser-ready Excel source, two DAX measure libraries, relationship maps, a theme, and a four-page Power BI dashboard specification
-- beginner-friendly learning notes, an interview guide, CV bullets, and full reproduction instructions
+![Supply Chain Operations Control Tower dashboard preview](dashboard/public/og.png)
+
+## Project overview
+
+This repository shows the full path from source data to a management-ready BI product:
+
+- 30,000 orders across a complete 12-month reporting period
+- linked shipment, inventory, product, warehouse, carrier, and customer data
+- reproducible data generation in Python with a fixed random seed
+- PostgreSQL layers for raw data, cleaned data, reusable KPI views, and a star schema
+- 18 source-data quality checks and 10 dimensional-model checks
+- operational analysis covering delivery, backlog, capacity, stockouts, exceptions, carriers, and customer segments
+- a responsive web dashboard with working warehouse, carrier, and product-category filters
+- Power BI-ready tables, DAX measures, relationship maps, and a report specification
+- supporting documentation for reproduction, interviews, and portfolio use
 
 ## Business problem
 
-Management receives separate operational files and cannot reliably answer:
+Management receives separate operational files and cannot answer important questions consistently:
 
-- Are orders being delivered on time and within SLA?
-- Which warehouses, carriers, or exception types cause delays?
-- Where is backlog accumulating, and what value is at risk?
-- Are stockouts associated with slower fulfilment?
-- How do demand, revenue, throughput, and inventory health change over time?
+1. Are orders being delivered on time and within the promised SLA?
+2. Which warehouses, carriers, and exception types account for the weakest performance?
+3. Where is open backlog accumulating, and how much order value is tied up in it?
+4. Are stockouts associated with slower fulfilment?
+5. How do demand, revenue, throughput, and inventory conditions change over time?
 
 The control tower creates one governed analytical layer for these questions.
 
-## Architecture
+## Project workflow
 
 ```mermaid
 flowchart LR
-    A[Synthetic source CSVs] --> B[PostgreSQL raw schema]
-    B --> C[Quality checks and audit results]
+    A[Source CSV files] --> B[PostgreSQL raw layer]
+    B --> C[Quality checks]
     C --> D[Clean conformed tables]
     D --> E[Operational KPI views]
     D --> F[Star schema]
-    E --> G[Portfolio CSV exports]
+    E --> G[Dashboard data exports]
     F --> H[Power BI source workbook]
-    H --> I[DAX model and dashboard plan]
-    G --> J[Interactive web dashboard]
+    G --> I[Interactive web dashboard]
+    H --> J[DAX model and report plan]
 ```
 
-The raw layer preserves source-like records. The clean layer standardises and flags them without hiding rejected rows. The analytics layer contains reusable KPI views and a dimensional model designed for BI reporting.
+The raw layer preserves the source records. Cleaning rules standardise usable values and flag invalid records without silently hiding them. The analytics layer then provides one consistent definition for each KPI and a dimensional model suitable for BI reporting.
 
-## Dataset scope
+## Dataset
 
 | Area | Scope |
 |---|---:|
-| Reporting period | 1 Sep 2025–31 Aug 2026 |
-| Analysis date | 1 Sep 2026 |
-| Unique orders | 30,000 |
+| Reporting period | 1 September 2025–31 August 2026 |
+| Analysis date | 1 September 2026 |
+| Orders | 30,000 |
 | Shipments | 28,534 |
 | Daily inventory snapshots | 262,800 |
 | Products | 120 |
@@ -58,9 +65,9 @@ The raw layer preserves source-like records. The clean layer standardises and fl
 | Carriers | 7 |
 | Customers | 4,000 |
 
-The raw files also include controlled duplicates, invalid relationships, inconsistent labels, impossible dates, missing values, and inventory anomalies. These cases are deliberate and documented in the [data-quality manifest](data/quality_manifest.json).
+The generator deliberately adds a controlled number of duplicate records, broken relationships, inconsistent labels, impossible dates, missing values, and inventory anomalies. The expected cases are recorded in the [quality manifest](data/quality_manifest.json), which lets the validation script distinguish intentional test cases from unexpected damage.
 
-## Validated headline KPIs
+## Validated KPI results
 
 | KPI | Result |
 |---|---:|
@@ -70,7 +77,7 @@ The raw files also include controlled duplicates, invalid relationships, inconsi
 | Average order value | €110.71 |
 | On-time delivery | 62.32% |
 | Late delivery | 37.68% |
-| Average delay | 0.76 days |
+| Average delivery delay | 0.76 days |
 | Average fulfilment lead time | 1.43 days |
 | Open backlog | 688 orders |
 | SLA breach rate | 38.78% |
@@ -79,22 +86,33 @@ The raw files also include controlled duplicates, invalid relationships, inconsi
 | Inventory turnover | 4.30 |
 | Shipment exception rate | 28.14% |
 
-Definitions and denominators are documented in the [KPI catalogue](documentation/05_kpi_catalog.md), so the metrics are reproducible rather than presentation-only figures.
+The [KPI catalogue](documentation/05_kpi_catalog.md) documents the business definition, formula, grain, and denominator for each measure.
 
 ## Main findings
 
-- The Rhine-Ruhr Fulfilment Centre in Cologne is the main operational constraint: 55.62% on-time delivery, a 36.81% exception rate, and 117 days above capacity.
-- Warehouse-capacity exceptions affect 4,709 shipments, represent 59% of recorded exceptions, and are linked to 3,822 late deliveries.
-- Economy carriers are materially weaker in this simulation: Alpine Freight delivers 27.98% on time and EuroLink Standard 30.81%, compared with about 86% for the two express carriers.
-- Orders associated with a stockout are late 96.70% of the time, versus 36.98% without a linked stockout. This is an association, not proof of causation.
-- Open backlog contains 688 orders; 464 are at least 15 days old, with €52,374.40 in order value.
-- December demand reaches 3,884 orders, then falls to 2,075 in January, exposing a seasonal capacity-planning risk.
+- The Rhine-Ruhr Fulfilment Centre in Cologne is the main constraint in this scenario: 55.62% on-time delivery, a 36.81% shipment exception rate, and 117 days above capacity.
+- Warehouse-capacity exceptions affect 4,709 shipments. They represent 59% of recorded exceptions and are associated with 3,822 late deliveries.
+- Economy services perform worst in the simulated carrier mix. Alpine Freight records 27.98% on-time delivery and EuroLink Standard 30.81%, while the two express carriers are close to 86%.
+- Orders linked to a stockout are late 96.70% of the time, compared with 36.98% for orders without a linked stockout. This is an association in the generated data, not proof that the stockout caused the delay.
+- The open backlog contains 688 orders. Of these, 464 are at least 15 days old and represent €52,374.40 in order value.
+- Monthly demand peaks at 3,884 orders in December and falls to 2,075 in January, making seasonal capacity planning an important management issue.
 
-The supporting SQL evidence and appropriately scoped recommendations are in [findings and recommendations](documentation/07_findings_and_recommendations.md).
+The supporting queries, evidence, limitations, and recommendations are in [findings and recommendations](documentation/07_findings_and_recommendations.md).
+
+## Interactive dashboard
+
+The **[public dashboard](https://akshayamin13.github.io/supply-chain-operations-control-tower/)** has four views:
+
+- **Executive overview:** headline KPIs, monthly order and revenue trends, warehouse delivery performance, backlog ageing, and customer segments
+- **Fulfilment:** carrier performance, warehouse throughput and delivery, cost, SLA, and exception analysis
+- **Inventory:** category-level stockout risk, shipped units, inventory value, turnover, and warehouse capacity utilisation
+- **Diagnostics:** high-risk orders and exception patterns for operational follow-up
+
+Warehouse, carrier, and product-category selections update the relevant visuals and KPI cards. The dashboard is built with React, TypeScript, Recharts, and Vite, and GitHub Actions publishes it from the `dashboard/` folder.
 
 ## Dimensional model
 
-The full PostgreSQL model retains transaction-level detail:
+The PostgreSQL model keeps transaction-level detail and uses shared conformed dimensions.
 
 | Fact table | Grain | Rows |
 |---|---|---:|
@@ -102,62 +120,93 @@ The full PostgreSQL model retains transaction-level detail:
 | `analytics.fact_shipments` | one row per unique shipment | 28,534 |
 | `analytics.fact_inventory` | one product–warehouse–date snapshot | 262,800 |
 
-Shared dimensions are Date, Product, Customer, Warehouse, and Carrier. Unknown-member rows protect model integrity when source keys are missing or invalid. The design and relationship rules are explained in [dimensional model](documentation/06_dimensional_model.md).
+The Date, Product, Customer, Warehouse, and Carrier dimensions can filter the related facts. Unknown-member rows preserve referential integrity when a source key is missing or invalid. See the [dimensional-model notes](documentation/06_dimensional_model.md) for the grain and relationship rules.
 
-## Interactive dashboard
+## Repository structure
 
-Open the public [Supply Chain Operations Control Tower dashboard](https://akshayamin13.github.io/supply-chain-control-tower-dashboard/) to explore the validated portfolio results through four interactive views. It includes warehouse, carrier, and product-category filters; executive KPIs; monthly trends; fulfilment and inventory analysis; and high-risk order diagnostics.
+```text
+dashboard/          interactive React dashboard and GitHub Pages build
+data/raw/           reproducible source-like CSV files
+data/processed/     management-ready SQL result exports
+documentation/      business, technical, learning, and interview notes
+outputs/            Power BI browser-source workbook
+powerbi/            DAX, theme, relationship maps, and report specification
+scripts/            data generation, validation, pipeline, and workbook tools
+sql/                numbered PostgreSQL pipeline and learning queries
+```
 
-The dashboard requires no sign-in, and its [source repository](https://github.com/Akshayamin13/supply-chain-control-tower-dashboard) is public. Like the underlying project, all dashboard data is synthetic.
+The numbered SQL scripts follow the actual processing order:
 
-## Power BI package for an Intel Mac
+1. Create the database and schemas.
+2. Define and import the raw tables.
+3. Run source-data checks.
+4. Clean and conform the records.
+5. Calculate KPIs and operational analysis.
+6. Build and test the star schema.
+7. Export reporting tables.
 
-Power BI Desktop is a Windows application, so this repository includes a browser-first handoff that can be used in the Power BI service:
+## Reproduce the analysis
 
-- `control_tower_powerbi_browser_source.xlsx` with eight named Excel tables
-- `measures_browser_aggregate.dax` for the compact browser model
-- `measures.dax` for the full transaction-level model
-- relationship maps for both models
-- a four-page dashboard specification and JSON theme
-- KPI reconciliation proving that all 16 browser-model headline measures equal the full PostgreSQL model
+Requirements:
 
-The report pages themselves are intentionally not claimed as complete: they must be assembled in a signed-in Power BI workspace. Start with the [Mac workflow](powerbi/mac_workflow.md) and [dashboard specification](powerbi/dashboard_specification.md).
+- Python 3.9 or newer
+- PostgreSQL 16 or another compatible recent release
+- Git
+- Node.js 22 and pnpm only if you want to run the web dashboard locally
 
-## Reproduce the project
-
-Prerequisites: Python 3.9+, PostgreSQL 16 or a compatible recent version, and Git. The data generator uses only the Python standard library.
+Generate and validate the source files:
 
 ```bash
 python3 scripts/generate_data.py
 python3 scripts/validate_generated_data.py
+```
+
+Run the complete PostgreSQL pipeline:
+
+```bash
 bash scripts/run_pipeline.sh
 ```
 
-The pipeline creates the local `supply_chain_control_tower` database when needed and runs all numbered SQL scripts in order. It stops at the first failed test. Detailed setup, verification queries, and workbook instructions are in the [reproduction guide](documentation/09_reproduction_guide.md).
+The pipeline creates the local `supply_chain_control_tower` database when required, runs the numbered SQL files in order, and stops if a quality test fails. Environment setup and verification queries are covered in the [reproduction guide](documentation/09_reproduction_guide.md).
 
-## Repository guide
+Run the dashboard locally:
 
-```text
-data/raw/          reproducible source-like CSV files
-data/processed/    management-ready SQL result exports
-documentation/     business, technical, learning, and interview documentation
-outputs/           Power BI browser-source workbook
-powerbi/           DAX, theme, relationship maps, and dashboard specification
-scripts/           data generation, validation, pipeline, and workbook utilities
-sql/               numbered PostgreSQL pipeline and learning queries
+```bash
+cd dashboard
+pnpm install
+pnpm dev
 ```
 
-Useful entry points:
+## Power BI workflow on an Intel Mac
 
-- [database basics](documentation/01_database_basics.md)
-- [source design](documentation/02_source_data_design.md) and [data dictionary](documentation/03_data_dictionary.md)
+Power BI Desktop does not run natively on macOS. The repository therefore prepares the SQL model first and includes a browser-oriented reporting handoff:
+
+- an [Excel source workbook](outputs/01a05dcc-9968-7a81-be26-ed89df7d1a66/control_tower_powerbi_browser_source.xlsx) with eight named tables
+- [aggregate DAX measures](powerbi/measures_browser_aggregate.dax) for the compact browser model
+- [transaction-level DAX measures](powerbi/measures.dax) for the full model
+- relationship maps for both model options
+- a four-page [dashboard specification](powerbi/dashboard_specification.md)
+- a reusable [Power BI theme](powerbi/control_tower_theme.json)
+
+All 16 headline measures in the compact workbook have been reconciled with the PostgreSQL results. The Power BI report pages are not presented as finished because they still need to be assembled in a signed-in Power BI workspace or a Windows environment. The [Mac workflow](powerbi/mac_workflow.md) explains both routes.
+
+## Documentation
+
+- [Project roadmap](documentation/00_project_roadmap.md)
+- [Database basics](documentation/01_database_basics.md)
+- [Source-data design](documentation/02_source_data_design.md)
+- [Data dictionary](documentation/03_data_dictionary.md)
 - [SQL pipeline walkthrough](documentation/04_sql_pipeline.md)
-- [SQL learning reference](documentation/11_sql_learning_reference.md)
-- [interview guide](documentation/08_interview_guide.md)
+- [KPI catalogue](documentation/05_kpi_catalog.md)
+- [Dimensional model](documentation/06_dimensional_model.md)
+- [Findings and recommendations](documentation/07_findings_and_recommendations.md)
+- [Interview guide](documentation/08_interview_guide.md)
+- [Reproduction guide](documentation/09_reproduction_guide.md)
 - [CV and portfolio wording](documentation/10_cv_and_portfolio.md)
+- [SQL learning reference](documentation/11_sql_learning_reference.md)
 
 ## Skills demonstrated
 
-PostgreSQL, SQL data cleaning, data-quality controls, KPI governance, dimensional modelling, root-cause analysis, supply-chain analytics, DAX design, Power BI semantic modelling, Python data generation, Git, documentation, and evidence-based business communication.
+PostgreSQL, SQL data cleaning, data-quality testing, KPI governance, dimensional modelling, supply-chain analysis, root-cause investigation, DAX design, Power BI semantic modelling, Python data generation, Git, dashboard development, and business communication.
 
-This scope is aligned with Operations Analyst, Supply Chain Analyst, Logistics Analyst, BI Analyst, Reporting Analyst, Inventory Analyst, and Operations Performance Analyst applications in Germany.
+The project is intended for Operations Analyst, Supply Chain Analyst, Logistics Analyst, BI Analyst, Reporting Analyst, Inventory Analyst, and Operations Performance Analyst applications in Germany.
