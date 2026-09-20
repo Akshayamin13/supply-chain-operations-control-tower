@@ -76,7 +76,7 @@ DIVIDE(
 Warehouse Throughput Units =
 SUM('tblInventorySummary'[shipped_quantity])
 
-// On-Time Delivery % was formatted as Percentage with two decimal places.
+// On-Time Delivery %, Stockout Rate and Shipment Exception Rate are formatted as Percentage.
 // Validation query run in Power BI DAX query view on 20 September 2026:
 // EVALUATE ROW(
 //     "Orders", [Total Orders],
