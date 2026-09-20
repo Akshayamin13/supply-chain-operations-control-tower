@@ -1,5 +1,11 @@
 # Mac-compatible Power BI workflow
 
+## What was used for this project
+
+The saved browser model was created from the public workbook in this repository using Power BI's current Excel web connector. Eight named tables were imported, the eight relationships in `model_relationships.md` were created, and the four measures in `live_measures.dax` were validated in DAX query view. The four-page report is saved in My workspace. This is a controlled snapshot: refresh depends on the published workbook URL continuing to be available and on the connector's refresh behaviour. It is not a live connection to the Mac's PostgreSQL database.
+
+The public portfolio link remains the GitHub Pages dashboard. The Power BI report requires the owner's sign-in and should not be presented as a public link.
+
 ## Recommended browser-first path
 
 Power BI Desktop requires Windows, but Microsoft supports creating import semantic models, relationships, DAX measures, and reports in the Power BI service's web experience. Use the generated `control_tower_powerbi_browser_source.xlsx` workbook as the portfolio snapshot source.

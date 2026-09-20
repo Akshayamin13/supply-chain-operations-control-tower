@@ -39,7 +39,7 @@ Use this model with `control_tower_powerbi_browser_source.xlsx`.
 | `DimCarrier` | `carrier_key` | `ShipmentSummary` | `carrier_key` |
 | `DimProduct` | `product_key` | `InventorySummary` | `product_key` |
 
-All are active, one-to-many, single-direction relationships. `OrderSummary` and `ShipmentSummary` carry product category as a degenerate reporting attribute; customer segment is also stored directly in `OrderSummary`. `ExecutiveKPIs` is a disconnected validation table and should not drive report visuals.
+All eight are active, one-to-many, single-direction relationships in the saved browser model. The imported table names have a `tbl` prefix. `OrderSummary` and `ShipmentSummary` carry product category as a degenerate reporting attribute; customer segment is also stored directly in `OrderSummary`. `ExecutiveKPIs` is a disconnected validation table and does not drive report visuals. The four executive cards use live measures on the related summary tables.
 
 Use `measures_browser_aggregate.dax` with this model.
 

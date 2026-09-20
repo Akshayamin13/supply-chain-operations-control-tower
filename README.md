@@ -19,7 +19,7 @@ Die Grundlage bilden 30.000 synthetische Aufträge aus zwölf Monaten und sechs 
 Der Standort Köln erreicht eine Termintreue von 55,62 % und überschreitet an 117 Tagen seine Tageskapazität.
 Kapazitätsengpässe sind netzwerkweit bei 4.709 Sendungen erfasst, darunter 3.822 verspätete Lieferungen.
 Ich empfehle, die Kapazitätsplanung zu überprüfen, alte Auftragsrückstände zu klären und kritische Artikel gezielt nachzubestellen.
-Die Analyse wurde mit PostgreSQL und Python umgesetzt; das interaktive Web-Dashboard zeigt die Ergebnisse. Ein fertiger Power-BI-Bericht steht noch aus.
+Die Analyse wurde mit PostgreSQL und Python umgesetzt; das öffentliche Web-Dashboard zeigt die Ergebnisse. Ein vierseitiger Power-BI-Bericht ist im privaten Arbeitsbereich angelegt. Vier DAX-Kennzahlen sind dort geprüft und mit den Übersichtskarten verbunden; die vollständige Berichtsgestaltung und Freigabe stehen noch aus.
 
 ## What I would recommend
 
@@ -120,6 +120,7 @@ flowchart LR
     D --> F[Analytical exports]
     F --> G[React dashboard on GitHub Pages]
     E --> H[Power BI source workbook and DAX]
+    H --> I[Private Power BI report draft]
 ```
 
 | Fact table | Grain | Rows |
@@ -148,7 +149,7 @@ pnpm install
 pnpm dev
 ```
 
-## Power BI deliverables and remaining work
+## Power BI progress and remaining work
 
 The completed interactive report is currently the web dashboard above. The Power BI assets include:
 
@@ -157,7 +158,9 @@ The completed interactive report is currently the web dashboard above. The Power
 - [Relationships](powerbi/model_relationships.md), [theme](powerbi/control_tower_theme.json) and [four-page report specification](powerbi/dashboard_specification.md)
 - SQL reconciliation of 16 compact-model headline calculations against the full model
 
-**The Power BI report itself is not yet complete.** The workbook reconciliation is not a substitute for testing DAX in Power BI. The remaining work is to assemble the report in a signed-in workspace, reconcile its measures, and export real report screenshots and a PDF. The [Mac workflow](powerbi/mac_workflow.md) describes the current browser route.
+The workbook is imported into a Power BI semantic model in My workspace. Its **eight active, single-direction relationships** are in place, and a saved four-page report has been checked in reading view. Live DAX queries for [Total Orders, Revenue, On-Time Delivery % and Open Backlog](powerbi/live_measures.dax) return **29,873**, **€3,221,285.15**, **62.32%** and **688**, matching the SQL baseline. These four measures now drive the executive cards.
+
+This is still a **private report draft**, not the public dashboard linked above. The executive cards are measure-based, but the orders and revenue cards still use Power BI's abbreviated display units. The three other pages contain working backlog, product-category stockout and carrier late-delivery charts, but they do not yet implement every visual in the [report specification](powerbi/dashboard_specification.md). The remaining DAX measures, full visual-level reconciliation, Power BI screenshots and PDF export are outstanding. [Power BI status and access notes](powerbi/README.md) explain the boundary.
 
 ## Repository guide
 

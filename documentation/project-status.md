@@ -1,6 +1,6 @@
 # Project status and delivery milestones
 
-## Current gate: SQL and analytical handoff complete
+## Current gate: SQL and web dashboard complete; Power BI draft in progress
 
 | Deliverable | Status |
 |---|---|
@@ -17,12 +17,14 @@
 | DAX measures, relationships, theme, and report plan | Complete |
 | Power BI KPI reconciliation | Complete — 16/16 measures passed |
 | Interactive web dashboard | Published on GitHub Pages |
-| Interactive Power BI report | Workspace access available; report assembly and in-service validation outstanding |
+| Power BI semantic model | Eight named tables imported; eight active relationships saved |
+| Power BI DAX in service | Four measures created, reconciled to SQL and used by executive cards; remaining definitions pending |
+| Interactive Power BI report | Four saved pages verified in reading view; visual and format work outstanding |
 | Portfolio README and supporting documentation | Complete |
 
 ## Honest completion boundary
 
-The SQL model and interactive web dashboard are complete. A Power BI workspace became available on 19 September 2026. The Power BI report is complete only after the tables, relationships and DAX have been tested in that workspace, all four pages have been assembled, and real Power BI screenshots and a PDF have been exported. SQL reconciliation of the workbook is a separate check.
+The SQL model and public web dashboard are complete. A Power BI workspace became available on 19 September 2026. On 20 September, the browser workbook was imported, eight relationships were saved, and four report pages were opened in reading view. Live DAX queries returned 29,873 orders, €3,221,285.15 revenue-scenario value, 62.32% on-time delivery and 688 open backlog orders. These four measures are used by the executive cards. The report is **not complete**: most planned visuals and DAX measures remain to be added, orders/revenue card formats need polishing, and real Power BI screenshots and a PDF have not been exported. SQL reconciliation of the workbook remains a separate check.
 
 ## Validation rule
 

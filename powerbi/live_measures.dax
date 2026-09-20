@@ -1,0 +1,33 @@
+// These four measures were created in the imported Power BI semantic model.
+// The tables retain the Excel workbook's tbl prefixes.
+
+Total Orders =
+SUM('tblOrderSummary'[order_count])
+
+Revenue =
+CALCULATE(
+    SUM('tblOrderSummary'[order_value_eur]),
+    'tblOrderSummary'[order_status] <> "Cancelled"
+)
+
+On-Time Delivery % =
+DIVIDE(
+    SUM('tblShipmentSummary'[on_time_delivery_count]),
+    SUM('tblShipmentSummary'[delivered_shipment_count])
+)
+
+Open Backlog =
+CALCULATE(
+    SUM('tblOrderSummary'[order_count]),
+    'tblOrderSummary'[backlog_bucket] <> "Not Backlog"
+)
+
+// The last measure is formatted as Percentage with two decimal places.
+// Validation query run in Power BI DAX query view on 20 September 2026:
+// EVALUATE ROW(
+//     "Orders", [Total Orders],
+//     "Revenue", [Revenue],
+//     "OnTimePct", ROUND([On-Time Delivery %] * 100, 2),
+//     "Backlog", [Open Backlog]
+// )
+// Result: 29873 | 3221285.15 | 62.32 | 688
