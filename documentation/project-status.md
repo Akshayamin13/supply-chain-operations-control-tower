@@ -18,13 +18,13 @@
 | Power BI KPI reconciliation | Complete — 16/16 measures passed |
 | Interactive web dashboard | Published on GitHub Pages |
 | Power BI semantic model | Eight named tables imported; eight active relationships saved |
-| Power BI DAX in service | Four measures created, reconciled to SQL and used by executive cards; remaining definitions pending |
-| Interactive Power BI report | Four saved pages verified in reading view; visual and format work outstanding |
+| Power BI DAX in service | Fifteen measures saved; headline query outputs reconciled to SQL |
+| Interactive Power BI report | Four saved pages with live charts; PDF generated in service, local capture and polish outstanding |
 | Portfolio README and supporting documentation | Complete |
 
 ## Honest completion boundary
 
-The SQL model and public web dashboard are complete. A Power BI workspace became available on 19 September 2026. On 20 September, the browser workbook was imported, eight relationships were saved, and four report pages were opened in reading view. Live DAX queries returned 29,873 orders, €3,221,285.15 revenue-scenario value, 62.32% on-time delivery and 688 open backlog orders. These four measures are used by the executive cards. The report is **not complete**: most planned visuals and DAX measures remain to be added, orders/revenue card formats need polishing, and real Power BI screenshots and a PDF have not been exported. SQL reconciliation of the workbook remains a separate check.
+The SQL model and public web dashboard are complete. A Power BI workspace became available on 19 September 2026. On 20 September, the browser workbook was imported, eight relationships were saved, and 15 live DAX measures were added to the semantic model. The four executive cards and eight charts across four pages render from that model. Headline DAX query outputs agree with the SQL baseline. The report is **not fully polished**: abbreviated card values and decimal rate axes need formatting, the compact aggregate workbook cannot supply every planned transaction-level visual, and visual-level checks remain. Power BI generated a four-page PDF export, but the browser did not provide a local file for version control; Power BI screenshots are also not checked in.
 
 ## Validation rule
 

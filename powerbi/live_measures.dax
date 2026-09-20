@@ -1,4 +1,4 @@
-// These four measures were created in the imported Power BI semantic model.
+// These measures were created in the imported Power BI semantic model.
 // The tables retain the Excel workbook's tbl prefixes.
 
 Total Orders =
@@ -22,7 +22,61 @@ CALCULATE(
     'tblOrderSummary'[backlog_bucket] <> "Not Backlog"
 )
 
-// The last measure is formatted as Percentage with two decimal places.
+Delivered Shipments =
+SUM('tblShipmentSummary'[delivered_shipment_count])
+
+Late Deliveries =
+SUM('tblShipmentSummary'[late_delivery_count])
+
+Late Delivery % =
+DIVIDE([Late Deliveries], [Delivered Shipments])
+
+Average Delay Days =
+DIVIDE(
+    SUM('tblShipmentSummary'[delivery_delay_days_sum]),
+    SUM('tblShipmentSummary'[delivery_delay_observation_count])
+)
+
+Average Fulfilment Lead Time =
+DIVIDE(
+    SUM('tblShipmentSummary'[fulfilment_lead_time_days_sum]),
+    SUM('tblShipmentSummary'[fulfilment_lead_time_observation_count])
+)
+
+Shipment Exception Rate =
+DIVIDE(
+    CALCULATE(
+        SUM('tblShipmentSummary'[shipment_count]),
+        'tblShipmentSummary'[exception_reason] <> "No Exception"
+    ),
+    SUM('tblShipmentSummary'[shipment_count])
+)
+
+SLA Breach % =
+DIVIDE(
+    SUM('tblOrderSummary'[sla_breach_order_count]),
+    SUM('tblOrderSummary'[sla_eligible_order_count])
+)
+
+Backlog Over 7 Days =
+CALCULATE(
+    SUM('tblOrderSummary'[order_count]),
+    'tblOrderSummary'[backlog_bucket] IN {"8–14 days", "15+ days"}
+)
+
+Stockout Snapshots =
+SUM('tblInventorySummary'[stockout_snapshot_count])
+
+Stockout Rate =
+DIVIDE(
+    [Stockout Snapshots],
+    SUM('tblInventorySummary'[valid_snapshot_count])
+)
+
+Warehouse Throughput Units =
+SUM('tblInventorySummary'[shipped_quantity])
+
+// On-Time Delivery % was formatted as Percentage with two decimal places.
 // Validation query run in Power BI DAX query view on 20 September 2026:
 // EVALUATE ROW(
 //     "Orders", [Total Orders],
@@ -31,3 +85,17 @@ CALCULATE(
 //     "Backlog", [Open Backlog]
 // )
 // Result: 29873 | 3221285.15 | 62.32 | 688
+
+// Validation query run in Power BI DAX query view on 20 September 2026:
+// EVALUATE ROW(
+//     "Delivered", [Delivered Shipments],
+//     "LatePct", ROUND([Late Delivery %] * 100, 2),
+//     "AvgDelay", ROUND([Average Delay Days], 2),
+//     "LeadTime", ROUND([Average Fulfilment Lead Time], 2),
+//     "ExceptionPct", ROUND([Shipment Exception Rate] * 100, 2),
+//     "SLAPct", ROUND([SLA Breach %] * 100, 2),
+//     "Backlog7", [Backlog Over 7 Days],
+//     "StockoutPct", ROUND([Stockout Rate] * 100, 2),
+//     "Throughput", [Warehouse Throughput Units]
+// )
+// Result: 28172 | 37.68 | 0.76 | 1.43 | 28.14 | 38.78 | 499 | 0.35 | 67281

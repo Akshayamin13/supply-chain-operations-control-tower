@@ -19,7 +19,7 @@ Die Grundlage bilden 30.000 synthetische Aufträge aus zwölf Monaten und sechs 
 Der Standort Köln erreicht eine Termintreue von 55,62 % und überschreitet an 117 Tagen seine Tageskapazität.
 Kapazitätsengpässe sind netzwerkweit bei 4.709 Sendungen erfasst, darunter 3.822 verspätete Lieferungen.
 Ich empfehle, die Kapazitätsplanung zu überprüfen, alte Auftragsrückstände zu klären und kritische Artikel gezielt nachzubestellen.
-Die Analyse wurde mit PostgreSQL und Python umgesetzt; das öffentliche Web-Dashboard zeigt die Ergebnisse. Ein vierseitiger Power-BI-Bericht ist im privaten Arbeitsbereich angelegt. Vier DAX-Kennzahlen sind dort geprüft und mit den Übersichtskarten verbunden; die vollständige Berichtsgestaltung und Freigabe stehen noch aus.
+Die Analyse wurde mit PostgreSQL und Python umgesetzt; das öffentliche Web-Dashboard zeigt die Ergebnisse. Im privaten Power-BI-Arbeitsbereich gibt es außerdem einen vierseitigen Bericht mit 15 gespeicherten DAX-Kennzahlen. Die öffentliche Freigabe und die vollständige Gestaltung nach Berichtsspezifikation stehen noch aus.
 
 ## What I would recommend
 
@@ -59,7 +59,9 @@ Filter warehouse capacity and the critical-order queue, then compare customer se
 
 ## Why I built it this way
 
-I wanted the project to answer a practical sequence of questions: what is late, where is it happening, and which orders or products need attention first. That is why the dashboard moves from an overview to fulfilment, inventory and an order-level exception queue.
+In my Amazon operations support role, I tracked delayed shipments, ageing backlog and stuck inventory, then prepared escalation lists for the teams responsible for the next action. That experience shaped the order of this dashboard: start with the service result, locate the warehouse or carrier issue, then reach the orders that need an owner. The backlog buckets and high-risk order queue are there to support that daily triage, not just to fill a report page.
+
+At Rockid.One, I brought finance sheets, CRM exports and other reporting inputs into structured KPI tables for weekly management reviews. That is why this project keeps its metric definitions and SQL quality checks alongside the visuals. A clean chart is only useful if another analyst can trace the number back to an eligible record and understand what was excluded.
 
 The project runs on a 2019 Intel MacBook Air. I built the PostgreSQL model and checked the measures before designing the report, so the results can be inspected without relying on the dashboard. I kept orders, shipments and inventory in separate fact tables because their grains differ; joining everything into one table would repeat order value across inventory snapshots.
 
@@ -120,7 +122,7 @@ flowchart LR
     D --> F[Analytical exports]
     F --> G[React dashboard on GitHub Pages]
     E --> H[Power BI source workbook and DAX]
-    H --> I[Private Power BI report draft]
+    H --> I[Private four-page Power BI report]
 ```
 
 | Fact table | Grain | Rows |
@@ -149,7 +151,7 @@ pnpm install
 pnpm dev
 ```
 
-## Power BI progress and remaining work
+## Power BI report and remaining work
 
 The completed interactive report is currently the web dashboard above. The Power BI assets include:
 
@@ -158,9 +160,9 @@ The completed interactive report is currently the web dashboard above. The Power
 - [Relationships](powerbi/model_relationships.md), [theme](powerbi/control_tower_theme.json) and [four-page report specification](powerbi/dashboard_specification.md)
 - SQL reconciliation of 16 compact-model headline calculations against the full model
 
-The workbook is imported into a Power BI semantic model in My workspace. Its **eight active, single-direction relationships** are in place, and a saved four-page report has been checked in reading view. Live DAX queries for [Total Orders, Revenue, On-Time Delivery % and Open Backlog](powerbi/live_measures.dax) return **29,873**, **€3,221,285.15**, **62.32%** and **688**, matching the SQL baseline. These four measures now drive the executive cards.
+The workbook is imported into a Power BI semantic model in My workspace. Its **eight active, single-direction relationships** are in place. A [saved four-page report](https://app.powerbi.com/groups/me/reports/4d0f7135-3c86-4cf7-b3a4-7ad80dfea425/abc930a6a645b1be4374?experience=power-bi) contains four measure-driven executive cards, monthly orders and warehouse delivery comparisons, backlog ageing and carrier service comparisons, two category-level inventory views, and late-delivery and exception diagnostics. The report requires my sign-in; the link is **not** a public recruiter link.
 
-This is still a **private report draft**, not the public dashboard linked above. The executive cards are measure-based, but the orders and revenue cards still use Power BI's abbreviated display units. The three other pages contain working backlog, product-category stockout and carrier late-delivery charts, but they do not yet implement every visual in the [report specification](powerbi/dashboard_specification.md). The remaining DAX measures, full visual-level reconciliation, Power BI screenshots and PDF export are outstanding. [Power BI status and access notes](powerbi/README.md) explain the boundary.
+Fifteen [live DAX measures](powerbi/live_measures.dax) were saved to the model. Direct DAX queries reconciled the headline results to SQL, including **29,873** eligible orders, **€3,221,285.15** scenario order value, **62.32%** on-time delivery, **688** open backlog orders, **28.14%** shipment exceptions and **0.35%** stockout rate. Power BI generated a four-page PDF export, but its browser download was not captured into this repository. The images above are **web-dashboard** captures, not Power BI screenshots. This remains a **private, partially polished Power BI report**: the order/revenue cards use abbreviated units, the new rate charts need percentage formatting, and the compact workbook cannot support every transaction-level visual in the [full report specification](powerbi/dashboard_specification.md). [Status and access notes](powerbi/README.md) record the exact boundary.
 
 ## Repository guide
 
