@@ -11,6 +11,6 @@ This directory contains:
 - `mac_workflow.md` — browser-first and Windows fallback options;
 - `control_tower_theme.json` — restrained professional colour palette.
 
-The generated browser Excel source is `outputs/01a05dcc-9968-7a81-be26-ed89df7d1a66/control_tower_powerbi_browser_source.xlsx`.
+The [Excel source workbook](../outputs/powerbi_source/control_tower_powerbi_browser_source.xlsx) contains eight named tables.
 
-The workbook and DAX are reconciled to the full PostgreSQL model. Building the interactive report requires a signed-in Power BI workspace and follows the exact field placements in `dashboard_specification.md`.
+The compact model's 16 headline calculations have been reconciled in SQL to the full PostgreSQL model. The DAX definitions still need to be executed and checked in Power BI. Building the interactive report requires a signed-in workspace; [the specification](dashboard_specification.md) distinguishes the compact workbook's supported visuals from the additional detail required for a full report.

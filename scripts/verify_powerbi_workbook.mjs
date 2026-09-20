@@ -10,7 +10,7 @@ const projectRoot = path.resolve(scriptDir, "..");
 const workbookPath = path.join(
   projectRoot,
   "outputs",
-  "01a05dcc-9968-7a81-be26-ed89df7d1a66",
+  "powerbi_source",
   "control_tower_powerbi_browser_source.xlsx",
 );
 

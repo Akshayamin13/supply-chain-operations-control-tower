@@ -5,14 +5,17 @@
 Power BI Desktop requires Windows, but Microsoft supports creating import semantic models, relationships, DAX measures, and reports in the Power BI service's web experience. Use the generated `control_tower_powerbi_browser_source.xlsx` workbook as the portfolio snapshot source.
 
 1. Open `https://app.powerbi.com` in a supported browser and sign in.
-2. In a workspace, choose the create/new semantic-model workflow and select Excel.
-3. Upload the generated workbook from `outputs/01a05dcc-9968-7a81-be26-ed89df7d1a66/`.
+2. Use **Create → Get data** (modern Power Query), or the current **New item → Semantic model → Excel** route available in the workspace. Create an import semantic model, not a workbook viewing item.
+3. Select the generated workbook from `outputs/powerbi_source/`. If the connector requires cloud storage, use an authorised OneDrive for Business or SharePoint location.
 4. Select all eight named tables.
 5. Confirm numeric, date, text, and true/false data types. Convert the two order-summary flag columns to true/false if Power Query initially reads them as text.
 6. Create the Mac/browser aggregate relationships in `model_relationships.md`.
 7. Add the measures from `measures_browser_aggregate.dax` and apply their display formats.
 8. Build the four pages in `dashboard_specification.md`.
-9. Reconcile the unfiltered measures to `data/processed/executive_kpis.csv` before taking screenshots.
+9. Reconcile the unfiltered measures to `data/processed/executive_kpis.csv` before taking screenshots. SQL reconciliation of the export does not verify that the relationships and DAX have been implemented correctly in Power BI.
+10. Save the four-page report, export real screenshots and a PDF from Power BI, and record the report/workspace location. Only then mark the Power BI report complete.
+
+Microsoft retired the legacy Excel/CSV Create-page import flow; models created using it stopped loading after 31 August 2026. Use the current connector/import experience described above. See [Microsoft's Excel import and migration guidance](https://learn.microsoft.com/en-us/power-bi/connect-data/service-excel-workbook-files#migrate-from-the-legacy-excel-and-csv-import-experience), checked 19 September 2026.
 
 Official references:
 

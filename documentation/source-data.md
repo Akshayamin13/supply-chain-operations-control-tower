@@ -1,4 +1,4 @@
-# Source data design
+# Source data and scenario design
 
 ## Scenario
 
@@ -87,4 +87,3 @@ The generator injects a limited, deterministic set of defects after creating the
 - inventory balance mismatches.
 
 The file `data/quality_manifest.json` records the intended counts. The validator independently recalculates them. SQL then detects the same issues before cleaning.
-

@@ -1,4 +1,4 @@
-# KPI catalogue
+# KPI definitions and denominators
 
 All values describe the synthetic scenario as of 2026-09-01. Percentages use a 0–100 display scale.
 

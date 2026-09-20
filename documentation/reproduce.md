@@ -1,4 +1,4 @@
-# Reproduction guide
+# Reproduce the analysis
 
 ## Prerequisites
 
@@ -58,7 +58,7 @@ node scripts/build_powerbi_workbook.mjs
 node scripts/verify_powerbi_workbook.mjs
 ```
 
-The finished workbook is committed under `outputs/`, so PostgreSQL and Python users do not need this private runtime simply to review or upload the model.
+The finished workbook is committed under `outputs/powerbi_source/`, so PostgreSQL and Python users do not need this private runtime simply to review or upload the model. The workbook filename is `control_tower_powerbi_browser_source.xlsx`.
 
 ## 5. Expected model sizes
 

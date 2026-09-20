@@ -1,4 +1,4 @@
-# PostgreSQL pipeline
+# SQL pipeline and cleaning rules
 
 ## Why use layers?
 

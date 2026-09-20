@@ -15,4 +15,4 @@ Run the complete layer with `bash scripts/run_pipeline.sh`, or execute these fil
 11. `11_export_powerbi_tables.sql`
 12. `12_sql_learning_queries.sql`
 
-The pipeline stops on the first failed import, quality assertion, model test, or SQL error. See `documentation/04_sql_pipeline.md` for the purpose and decisions in each stage.
+The pipeline stops on the first failed import, quality assertion, model test, or SQL error. See the [pipeline and cleaning notes](../documentation/pipeline.md) for the purpose and decisions in each stage.

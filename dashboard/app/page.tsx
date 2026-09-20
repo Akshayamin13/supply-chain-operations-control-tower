@@ -264,7 +264,7 @@ function ExecutiveOverview({ warehouseId }: { warehouseId: string }) {
         <Panel
           eyebrow="Demand pulse"
           title="Monthly orders and revenue"
-          detail="Network trend · December volume peaks 63% above the monthly average"
+          detail={`Network trend · December volume peaks ${(100 * (Math.max(...monthlyTrend.map((month) => month.orders)) / (monthlyTrend.reduce((sum, month) => sum + month.orders, 0) / monthlyTrend.length) - 1)).toFixed(0)}% above the monthly average`}
           action={<Badge variant="secondary">12 months</Badge>}
         >
           <ChartContainer config={chartConfig} className="h-[310px] w-full aspect-auto">
@@ -379,7 +379,7 @@ function FulfilmentDashboard({ warehouseId }: { warehouseId: string }) {
         <KpiCard label="Delivered shipments" value={delivered.toLocaleString('en-GB')} note={selectedCarrier ? `${selectedCarrier.shipments.toLocaleString('en-GB')} carrier shipments` : selected ? selected.fullName : '99.13% of shipments'} icon={PackageCheck} />
         <KpiCard label="Late delivery" value={`${(100 - otd).toFixed(2)}%`} note="Delivered shipment denominator" icon={Clock3} tone="red" />
         <KpiCard label="Average delay" value={`${delay.toFixed(2)} days`} note="Across eligible deliveries" icon={ArrowDownRight} tone="amber" />
-        <KpiCard label={selectedCarrier ? 'Average shipping cost' : 'Lead time'} value={selectedCarrier ? currency2.format(selectedCarrier.cost) : `${executiveKpis.fulfilmentLeadTime.toFixed(2)} days`} note={selectedCarrier ? `${selectedCarrier.service} service · per shipment` : 'Order to delivery'} icon={Truck} tone="blue" />
+        <KpiCard label={selectedCarrier ? 'Average shipping cost' : 'Network lead time'} value={selectedCarrier ? currency2.format(selectedCarrier.cost) : `${executiveKpis.fulfilmentLeadTime.toFixed(2)} days`} note={selectedCarrier ? `${selectedCarrier.service} service · per shipment` : 'Order to carrier hand-off'} icon={Truck} tone="blue" />
         <KpiCard label="Exception rate" value={`${exceptions.toFixed(2)}%`} note="Shipments with exception" icon={Siren} tone={exceptions > 30 ? 'red' : 'amber'} />
       </section>
 
@@ -599,12 +599,16 @@ export default function Home() {
   return (
     <main className="min-h-screen pb-12">
       <header className="border-b border-white/10 bg-[#0d292b] text-white">
-        <div className="mx-auto flex max-w-[1480px] items-center justify-between px-5 py-4 lg:px-8">
+        <div className="mx-auto flex max-w-[1480px] flex-wrap items-center justify-between gap-3 px-5 py-4 lg:px-8">
           <div className="flex items-center gap-3">
             <div className="grid size-10 place-items-center rounded-xl bg-[#25a394] font-mono text-xs font-bold tracking-widest shadow-lg shadow-black/20">OT</div>
             <div><p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#8dc9c1]">Supply chain analytics</p><p className="text-base font-semibold tracking-tight">Operations Control Tower</p></div>
           </div>
-          <div className="hidden items-center gap-2 text-xs text-[#b9d4d0] sm:flex"><span className="size-2 rounded-full bg-[#58c6a8] shadow-[0_0_0_4px_rgb(88_198_168/12%)]" />Validated snapshot · 01 Sep 2026</div>
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-[#b9d4d0]">
+            <a href="https://github.com/Akshayamin13" className="rounded-sm font-medium text-white underline decoration-[#648d87] underline-offset-4 hover:text-[#8dc9c1] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">Akshay Amin</a>
+            <a href="https://github.com/Akshayamin13/supply-chain-operations-control-tower" className="rounded-sm underline decoration-[#648d87] underline-offset-4 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">Project &amp; SQL</a>
+            <span className="hidden items-center gap-2 sm:flex"><span className="size-2 rounded-full bg-[#58c6a8] shadow-[0_0_0_4px_rgb(88_198_168/12%)]" />Synthetic snapshot · 01 Sep 2026</span>
+          </div>
         </div>
       </header>
 
@@ -637,7 +641,10 @@ export default function Home() {
         </Tabs>
 
         <footer className="mt-8 flex flex-col justify-between gap-3 border-t border-[#d8e3e0] pt-5 text-xs text-[#6d807c] sm:flex-row sm:items-center">
-          <p>All records and business outcomes are synthetic. Built as an analyst portfolio case study.</p>
+          <div className="space-y-1">
+            <p>Built by <a href="https://github.com/Akshayamin13" className="font-medium text-[#163b3b] underline underline-offset-4">Akshay Amin</a> · Analyst portfolio case study.</p>
+            <p>All records and business outcomes are synthetic. <a href="https://github.com/Akshayamin13/supply-chain-operations-control-tower/blob/main/LICENSE" className="underline underline-offset-4">MIT License</a></p>
+          </div>
           <div className="flex items-center gap-4"><span className="flex items-center gap-1.5"><ShieldCheck className="size-4 text-[#0b6b63]" />28 SQL quality checks passed</span><span className="flex items-center gap-1.5"><ShoppingCart className="size-4 text-[#0b6b63]" />30,000 source orders</span><ChevronRight className="size-4" /></div>
         </footer>
       </div>

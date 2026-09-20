@@ -1,4 +1,4 @@
-# Source data dictionary
+# Data dictionary
 
 ## `products.csv`
 
@@ -85,4 +85,3 @@
 | `shipped_quantity` | Units fulfilled from available stock | `integer` |
 | `closing_stock` | Opening + received − shipped | `integer` |
 | `reorder_level` | Stock threshold that triggers replenishment attention | `integer` |
-

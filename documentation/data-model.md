@@ -1,4 +1,4 @@
-# Dimensional model
+# Star schema and reporting grains
 
 ## Why a star schema?
 

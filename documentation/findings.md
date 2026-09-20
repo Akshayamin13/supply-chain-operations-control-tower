@@ -1,6 +1,19 @@
-# Findings and recommendations
+# Findings, evidence and recommended actions
 
 These findings describe a deterministic synthetic scenario. They demonstrate analytical reasoning but do not claim real employer impact or prove causation.
+
+## Where to check the numbers
+
+The SQL definitions are in [operations analysis](../sql/07_operations_analysis.sql). The committed exports provide the corresponding observations:
+
+- [Warehouse performance](../data/processed/warehouse_performance.csv) and [capacity](../data/processed/warehouse_capacity.csv)
+- [Exception counts and late deliveries](../data/processed/exception_analysis.csv)
+- [Backlog ageing and value](../data/processed/backlog_ageing.csv)
+- [Carrier service and cost](../data/processed/carrier_performance.csv)
+- [Stockout association](../data/processed/stockout_delay_association.csv) and [product risk](../data/processed/product_inventory_risk.csv)
+- [Monthly demand](../data/processed/monthly_order_trend.csv) and [customer segments](../data/processed/customer_segment_performance.csv)
+
+The 90% capacity warning below is a proposed operating threshold. The data does not establish a safe rerouting percentage, a receiving site with spare capacity on every affected day, or a number of late deliveries that an intervention would recover. A pilot should measure delivery reliability and cost against a comparable baseline before it is expanded.
 
 ## 1. Cologne is the main warehouse performance risk
 
