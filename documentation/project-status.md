@@ -19,12 +19,12 @@
 | Interactive web dashboard | Published on GitHub Pages |
 | Power BI semantic model | Eight named tables imported; eight active relationships saved |
 | Power BI DAX in service | Fifteen measures saved; headline query outputs reconciled to SQL |
-| Interactive Power BI report | Four saved pages with live charts; PDF generated in service, local capture and polish outstanding |
+| Interactive Power BI report | Four saved pages with live charts and screenshots; PDF generated in service, local PDF capture and polish outstanding |
 | Portfolio README and supporting documentation | Complete |
 
 ## Honest completion boundary
 
-The SQL model and public web dashboard are complete. A Power BI workspace became available on 19 September 2026. On 20 September, the browser workbook was imported, eight relationships were saved, and 15 live DAX measures were added to the semantic model. The four executive cards and eight charts across four pages render from that model. Headline DAX query outputs agree with the SQL baseline. Stockout and shipment-exception charts now display percentage axes. The report is **not fully polished**: order/revenue card values remain abbreviated, the compact aggregate workbook cannot supply every planned transaction-level visual, and visual-level checks remain. Power BI generated a four-page PDF export, but the browser did not provide a local file for version control; Power BI screenshots are also not checked in.
+The SQL model and public web dashboard are complete. A Power BI workspace became available on 19 September 2026. On 20 September, the browser workbook was imported, eight relationships were saved, and 15 live DAX measures were added to the semantic model. The four executive cards and eight charts across four pages render from that model. Headline DAX query outputs agree with the SQL baseline. Stockout and shipment-exception charts now display percentage axes. Four screenshots captured from the saved report are checked in and embedded in the README. The report is **not fully polished**: order/revenue card values remain abbreviated, the compact aggregate workbook cannot supply every planned transaction-level visual, and visual-level checks remain. Power BI generated a four-page PDF export, but the browser did not provide a local file for version control.
 
 ## Validation rule
 

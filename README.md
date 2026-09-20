@@ -162,7 +162,27 @@ The completed interactive report is currently the web dashboard above. The Power
 
 The workbook is imported into a Power BI semantic model in My workspace. Its **eight active, single-direction relationships** are in place. A [saved four-page report](https://app.powerbi.com/groups/me/reports/4d0f7135-3c86-4cf7-b3a4-7ad80dfea425/abc930a6a645b1be4374?experience=power-bi) contains four measure-driven executive cards, monthly orders and warehouse delivery comparisons, backlog ageing and carrier service comparisons, two category-level inventory views, and late-delivery and exception diagnostics. The report requires my sign-in; the link is **not** a public recruiter link.
 
-Fifteen [live DAX measures](powerbi/live_measures.dax) were saved to the model. Direct DAX queries reconciled the headline results to SQL, including **29,873** eligible orders, **€3,221,285.15** scenario order value, **62.32%** on-time delivery, **688** open backlog orders, **28.14%** shipment exceptions and **0.35%** stockout rate. Power BI generated a four-page PDF export, but its browser download was not captured into this repository. The images above are **web-dashboard** captures, not Power BI screenshots. This remains a **private, partially polished Power BI report**: the order/revenue cards use abbreviated units, and the compact workbook cannot support every transaction-level visual in the [full report specification](powerbi/dashboard_specification.md). [Status and access notes](powerbi/README.md) record the exact boundary.
+Fifteen [live DAX measures](powerbi/live_measures.dax) were saved to the model. Direct DAX queries reconciled the headline results to SQL, including **29,873** eligible orders, **€3,221,285.15** scenario order value, **62.32%** on-time delivery, **688** open backlog orders, **28.14%** shipment exceptions and **0.35%** stockout rate. Power BI generated a four-page PDF export, but its browser download was not captured into this repository. The earlier dashboard screenshots are from the React web app; the four captures below are from Power BI. This remains a **private, partially polished Power BI report**: the order/revenue cards use abbreviated units, and the compact workbook cannot support every transaction-level visual in the [full report specification](powerbi/dashboard_specification.md). [Status and access notes](powerbi/README.md) record the exact boundary.
+
+### Power BI report screenshots
+
+Captured from the saved report in Power BI Service reading view on 20 September 2026. They show the synthetic-data snapshot, not a public interactive Power BI report.
+
+#### Executive overview
+
+![Power BI executive overview with four KPI cards, monthly orders and warehouse delivery performance](screenshots/powerbi-executive-overview.jpg)
+
+#### Fulfilment & delivery
+
+![Power BI fulfilment page showing backlog ageing and on-time delivery by carrier](screenshots/powerbi-fulfilment-delivery.jpg)
+
+#### Inventory risk
+
+![Power BI inventory page showing stockout counts and rates by product category](screenshots/powerbi-inventory-risk.jpg)
+
+#### Operations diagnostics
+
+![Power BI diagnostics page showing late deliveries by carrier and shipment exception rate by warehouse](screenshots/powerbi-operations-diagnostics.jpg)
 
 ## Repository guide
 
@@ -173,7 +193,7 @@ data/processed/             SQL results used in the analysis
 documentation/              findings, definitions, model and learning notes
 outputs/powerbi_source/     Excel source workbook
 powerbi/                    DAX, theme, relationships and report specification
-screenshots/                captures of the working web dashboard
+screenshots/                web-dashboard and Power BI report captures
 scripts/                    generation, validation and export tools
 sql/                        SQL stages in execution order
 ```
